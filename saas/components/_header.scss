@@ -1,0 +1,29 @@
+.container {
+	// Styles for default (no breakpoint specified)
+
+	@include small {
+		// Additional styles for small breakpoint
+	}
+
+	@include medium {
+		// Additional styles for medium breakpoint
+	}
+
+	@include tablet {
+		// Additional styles for tablet breakpoint
+	}
+
+	@include desktop {
+		// Additional styles for desktop breakpoint
+	}
+
+	@include large {
+		// Additional styles for large breakpoint
+	}
+
+	@include extra-large {
+		// Additional styles for extra-large breakpoint
+	}
+
+	// Rest of your element's styles...
+}

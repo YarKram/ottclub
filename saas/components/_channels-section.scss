@@ -1,3 +1,13 @@
+.channels__container {
+	padding-top: 50px;
+	padding-bottom: 18px;
+}
+
+// .channels__content {
+// 	display: flex;
+// 	flex-direction: column;
+// }
+
 .channels__title {
 	color: #fff;
 	text-align: center;
@@ -8,6 +18,7 @@
 	line-height: 140%; /* 33.6px */
 
 	opacity: 0.9;
+	margin-bottom: 8px;
 	@include medium {
 	}
 
@@ -34,6 +45,7 @@
 	line-height: 150%; /* 22.5px */
 
 	opacity: 0.7;
+	margin-bottom: 24px;
 	@include medium {
 	}
 
@@ -50,6 +62,13 @@
 	}
 }
 
+.channels__categories {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 24px;
+	overflow: hidden;
+}
+
 .channels__category {
 	display: flex;
 	padding: 8px 16px 9px 16px;
@@ -57,7 +76,7 @@
 	align-items: center;
 
 	border-radius: 5px;
-	border: 2px solid rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.8) inset;
 
 	color: #fff;
 
@@ -69,7 +88,7 @@
 	line-height: 140%; /* 22.4px */
 
 	&:active {
-		border: 2px solid #fc3232;
+		box-shadow: 0px 0px 0px 2px #fc3232;
 		background: #fc3232;
 	}
 
@@ -89,6 +108,13 @@
 	}
 }
 
+.channels__list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin-bottom: 19px;
+}
+
 .channels__item {
 	display: flex;
 	padding: 11px;
@@ -97,7 +123,9 @@
 	gap: 10px;
 
 	border-radius: 5px;
-	border: 1px solid #c6c6c8;
+	// border: 1px solid #c6c6c8;
+	box-shadow: 0px 0px 0px 1px #c6c6c8 inset;
+
 	background: linear-gradient(180deg, #ff6961 0%, #d70015 100%);
 	// background: var(
 	// 	--gradient-a-red,
@@ -105,23 +133,45 @@
 	// );
 }
 
+/* Hide the items beyond the 6th index initially */
+.channels__item:nth-child(n + 7) {
+	display: none;
+}
+
 .channels__image {
 	display: flex;
-	width: 62.222px;
-	height: 35px;
+	width: auto;
+	height: auto;
 	justify-content: center;
 	align-items: center;
 }
 
 .channels__button {
-	color: #fff;
-	text-align: right;
+	display: flex;
+
+	// text-align: right;
 
 	/* Caption 2/Regular-UP */
+	color: #fff;
+
 	font-family: Inter;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 140%; /* 19.6px */
 	text-transform: uppercase;
+
+	margin-left: auto;
+	align-items: center;
+
+	&::after {
+		content: "";
+
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		width: 24px;
+		height: 24px;
+		background-image: url("/src/images/channels-images/arrow-icon.svg");
+	}
 }

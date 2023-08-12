@@ -2,6 +2,18 @@ footer {
 	background-color: gray;
 }
 
+.footer__container {
+	padding-top: 48px;
+	padding-bottom: 12px;
+}
+
+.navigation__list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 32px;
+}
+
 .navigation__link {
 	color: #fff;
 
@@ -22,6 +34,15 @@ footer {
 	font-style: normal;
 	font-weight: 600;
 	line-height: 140%; /* 22.4px */
+
+	margin-bottom: 18px;
+}
+
+.contact-list {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	margin-bottom: 16px;
 }
 
 .contact-list__item {
@@ -46,6 +67,31 @@ footer {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 140%; /* 19.6px */
+
+	margin-bottom: 8px;
+}
+
+.chat-support__contact-list {
+	flex-direction: row;
+	gap: 16px;
+	margin-bottom: 32px;
+}
+
+.payment-options__list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: 24px;
+	row-gap: 16px;
+	justify-content: center;
+	margin-bottom: 32px;
+}
+
+.footer__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4px;
 }
 
 .footer__text {

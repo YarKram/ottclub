@@ -66,7 +66,7 @@
 	display: flex;
 	gap: 8px;
 	margin-bottom: 24px;
-	overflow: hidden;
+	// overflow: hidden;
 }
 
 .channels__category {
@@ -123,14 +123,24 @@
 	gap: 10px;
 
 	border-radius: 5px;
-	// border: 1px solid #c6c6c8;
+
 	box-shadow: 0px 0px 0px 1px #c6c6c8 inset;
 
 	background: linear-gradient(180deg, #ff6961 0%, #d70015 100%);
-	// background: var(
-	// 	--gradient-a-red,
-	// 	linear-gradient(180deg, #ff6961 0%, #d70015 100%)
-	// );
+
+	&:nth-child(2),
+	&:nth-child(4) {
+		background: linear-gradient(180deg, #409cff 0%, #0040dd 100%);
+	}
+
+	&:nth-child(3),
+	&:nth-child(5) {
+		background: linear-gradient(180deg, #30db5b 0%, #248a3d 100%);
+	}
+
+	&:nth-child(6) {
+		background: linear-gradient(180deg, #7d7aff 0%, #3634a3 100%);
+	}
 }
 
 /* Hide the items beyond the 6th index initially */

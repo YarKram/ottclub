@@ -28,6 +28,12 @@
 	}
 }
 
-section {
-	background-color: gray;
+body {
+	background: rgba(19, 22, 24, 1);
+}
+
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
 }

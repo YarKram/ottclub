@@ -138,12 +138,19 @@ meter {
   }
 }
 
-section {
-  background-color: gray;
+body {
+  background: rgb(19, 22, 24);
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 header {
-  background-color: gray;
+  background: #131212;
+  background-image: url("/bg-general.svg");
 }
 
 .menu {
@@ -152,6 +159,11 @@ header {
   align-items: center;
   padding-top: 16px;
   padding-bottom: 8px;
+}
+@media screen and (min-width: 375px) {
+  .menu {
+    padding-top: 44px;
+  }
 }
 
 .menu__action {
@@ -181,6 +193,12 @@ header {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+@media screen and (min-width: 375px) {
+  .header-content {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
 
 .header-content__title {
   color: #fff;
@@ -190,13 +208,17 @@ header {
   font-style: normal;
   font-weight: 600;
   line-height: 120%; /* 28.8px */
-  margin-bottom: 18px;
+  margin-bottom: 7px;
+}
+@media screen and (min-width: 375px) {
+  .header-content__title {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
 }
 .header-content__image {
   display: flex;
   flex-shrink: 0;
-  border-radius: 0.776px;
-  border: 1.551px solid #020202;
   margin: 0 auto 20px auto;
 }
 
@@ -247,6 +269,7 @@ header {
 .pricing__image {
   width: 40px;
   height: 50px;
+  margin-bottom: 17px;
 }
 
 .pricing__price {
@@ -391,7 +414,6 @@ header {
   display: flex;
   gap: 8px;
   margin-bottom: 24px;
-  overflow: hidden;
 }
 
 .channels__category {
@@ -429,6 +451,15 @@ header {
   border-radius: 5px;
   box-shadow: 0px 0px 0px 1px #c6c6c8 inset;
   background: linear-gradient(180deg, #ff6961 0%, #d70015 100%);
+}
+.channels__item:nth-child(2), .channels__item:nth-child(4) {
+  background: linear-gradient(180deg, #409cff 0%, #0040dd 100%);
+}
+.channels__item:nth-child(3), .channels__item:nth-child(5) {
+  background: linear-gradient(180deg, #30db5b 0%, #248a3d 100%);
+}
+.channels__item:nth-child(6) {
+  background: linear-gradient(180deg, #7d7aff 0%, #3634a3 100%);
 }
 
 /* Hide the items beyond the 6th index initially */
@@ -506,7 +537,7 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 70px;
+  margin-bottom: 39px;
 }
 
 .devices__button {
@@ -568,10 +599,6 @@ header {
   line-height: 140%; /* 22.4px */
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-footer {
-  background-color: gray;
 }
 
 .footer__container {

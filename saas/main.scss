@@ -4,4 +4,10 @@
 @import "./utils/mixins";
 
 // components
+@import "./components/container";
 @import "./components/header";
+@import "./components/pricing-section";
+@import "./components/channels-section";
+@import "./components/devices-section";
+@import "./components/faq-section";
+@import "./components/footer";

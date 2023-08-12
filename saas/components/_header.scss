@@ -1,29 +1,131 @@
-.container {
-	// Styles for default (no breakpoint specified)
+header {
+	background-color: gray;
+}
 
-	@include small {
-		// Additional styles for small breakpoint
-	}
+.menu__action {
+	display: inline-flex;
+	padding: 9px 24px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	border-radius: 5px;
+	border: 2px solid #fff;
+}
+
+.menu__login-link {
+	// @include small {
+	color: #fff;
+	text-align: center;
+	/* Body 1/Medium */
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 140%; /* 22.4px */
+	// }
 
 	@include medium {
-		// Additional styles for medium breakpoint
 	}
 
 	@include tablet {
-		// Additional styles for tablet breakpoint
 	}
 
 	@include desktop {
-		// Additional styles for desktop breakpoint
 	}
 
 	@include large {
-		// Additional styles for large breakpoint
 	}
 
 	@include extra-large {
-		// Additional styles for extra-large breakpoint
+	}
+}
+
+.header-content__title {
+	// @include small {
+	color: #fff;
+	text-align: center;
+	font-family: Inter;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 120%; /* 28.8px */
+	// }
+
+	@include medium {
 	}
 
-	// Rest of your element's styles...
+	@include tablet {
+	}
+
+	@include desktop {
+	}
+
+	@include large {
+	}
+
+	@include extra-large {
+	}
+}
+
+.header-content__text {
+	// @include small {
+	color: #fff;
+	text-align: center;
+	font-family: Inter;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 21px */
+	// }
+
+	@include medium {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+	}
+
+	@include large {
+	}
+
+	@include extra-large {
+	}
+}
+
+.header-content__link {
+	// @include small {
+	display: inline-flex;
+	padding: 14px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	border-radius: 5px;
+	background: #fc3232;
+
+	color: #fff;
+	font-family: Inter;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 140%; /* 21px */
+	// }
+
+	@include medium {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+	}
+
+	@include large {
+	}
+
+	@include extra-large {
+	}
 }

@@ -1,0 +1,170 @@
+.pricing__price--highlighted {
+	color: #ff1f1f;
+	font-family: Inter;
+	font-size: 67px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 67px; /* 100% */
+
+	@include medium {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+	}
+
+	@include large {
+	}
+
+	@include extra-large {
+	}
+}
+
+.pricing__price {
+	color: #fff;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 16px; /* 100% */
+	text-transform: uppercase;
+
+	@include medium {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+	}
+
+	@include large {
+	}
+
+	@include extra-large {
+	}
+}
+
+.pricing__discount {
+	padding: 0 43px;
+
+	color: #fff;
+	text-align: center;
+	font-family: Inter;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 21px */
+	@include medium {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+	}
+
+	@include large {
+	}
+
+	@include extra-large {
+	}
+}
+
+.pricing__feature {
+	color: #fff;
+	font-family: Inter;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	letter-spacing: 0.3px;
+
+	@include medium {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+	}
+
+	@include large {
+	}
+
+	@include extra-large {
+	}
+}
+
+.pricing__input {
+	display: flex;
+	padding: 15px 16px;
+	align-items: center;
+	gap: 10px;
+
+	border-radius: 5px;
+	border: 1px solid #d0d0d1;
+	opacity: 0.9;
+	background: #fff;
+
+	&::placeholder {
+		color: rgba(60, 60, 67, 0.6);
+		font-feature-settings: "clig" off, "liga" off;
+		font-family: Inter;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 23px; /* 153.333% */
+		letter-spacing: 0.15px;
+
+		opacity: 0.9;
+	}
+	@include medium {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+	}
+
+	@include large {
+	}
+
+	@include extra-large {
+	}
+}
+
+.pricing__button {
+	display: flex;
+	padding: 16px 32px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	border-radius: 5px;
+	background: #ff1f1f;
+
+	color: #fff;
+	font-family: Inter;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	@include medium {
+	}
+
+	@include tablet {
+	}
+
+	@include desktop {
+	}
+
+	@include large {
+	}
+
+	@include extra-large {
+	}
+}

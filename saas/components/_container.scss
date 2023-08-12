@@ -1,0 +1,33 @@
+.container {
+	padding-left: $padding-small;
+	padding-right: $padding-small;
+
+	@include medium {
+		padding-left: $padding-medium;
+		padding-right: $padding-medium;
+	}
+
+	@include tablet {
+		padding-left: $padding-tablet;
+		padding-right: $padding-tablet;
+	}
+
+	@include desktop {
+		padding-left: $padding-desktop;
+		padding-right: $padding-desktop;
+	}
+
+	@include large {
+		padding-left: $padding-large;
+		padding-right: $padding-large;
+	}
+
+	@include extra-large {
+		padding-left: $padding-extra-large;
+		padding-right: $padding-extra-large;
+	}
+}
+
+section {
+	background-color: gray;
+}

@@ -32,6 +32,18 @@
 		font-size: 30px;
 		margin-bottom: 32px;
 	}
+
+	@include tablet {
+		text-align: left;
+	}
+
+	@include desktop {
+		font-size: 36px;
+	}
+
+	@include large {
+		font-size: 40px;
+	}
 }
 
 .faq__list {
@@ -46,6 +58,11 @@
 
 	@include desktop {
 		padding-bottom: 48px;
+	}
+
+	@include large {
+		padding-bottom: 80px;
+		column-gap: 178px;
 	}
 }
 
@@ -63,6 +80,13 @@
 	padding-bottom: 20px;
 
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+	// &::before {
+	// 	content: "";
+	// 	background-image: url("/src/images/faq-images/icon-down.svg");
+	// 	width: 24px;
+	// 	height: 24px;
+	// }
 
 	@include desktop {
 		padding-bottom: 27px;
@@ -87,4 +111,42 @@
 	@include tablet {
 		width: calc(50% - 12px);
 	}
+
+	@include large {
+		font-size: 18px;
+		width: calc(50% - 178px / 2);
+		gap: 50px;
+		font-weight: 500;
+	}
+}
+
+.faq__content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.faq__text {
+	display: flex;
+	align-items: flex-start;
+}
+
+.faq-icon {
+	display: flex;
+}
+
+.faq__description {
+	color: #fff;
+
+	/* Body 1/Regular */
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 150%; /* 24px */
+}
+.faq__description.hidden {
+	display: none;
 }

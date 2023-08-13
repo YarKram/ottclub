@@ -10,6 +10,11 @@
 		padding-top: 32px;
 		padding-bottom: 32px;
 	}
+
+	@include large {
+		padding-top: 48px;
+		padding-bottom: 56px;
+	}
 	/* Your styles for the article element */
 }
 
@@ -20,6 +25,10 @@
 	/* Your styles for the list element */
 	@include desktop {
 		gap: 24px;
+	}
+
+	@include large {
+		gap: 32px;
 	}
 }
 
@@ -46,6 +55,11 @@
 		width: 64px;
 		height: 64px;
 	}
+	@include large {
+		margin-bottom: 24px;
+		width: 72px;
+		height: 72px;
+	}
 }
 
 .advantages__title {
@@ -61,6 +75,11 @@
 	@include desktop {
 		margin-bottom: 16px;
 		line-height: 18px; /* 112.5% */
+	}
+
+	@include large {
+		font-size: 18px;
+		margin-bottom: 12px;
 	}
 }
 

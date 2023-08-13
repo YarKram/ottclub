@@ -9,6 +9,10 @@
 	@include desktop {
 		padding-top: 83px;
 	}
+
+	@include large {
+		padding-top: 48px;
+	}
 }
 
 .devices__content {
@@ -29,6 +33,10 @@
 
 	@include desktop {
 		padding-bottom: 77px;
+	}
+
+	@include large {
+		padding-bottom: 80px;
 	}
 }
 
@@ -61,6 +69,11 @@
 		font-size: 36px;
 		line-height: 140%;
 	}
+
+	@include large {
+		font-size: 40px;
+		margin-bottom: 16px;
+	}
 }
 
 .devices__description {
@@ -83,12 +96,17 @@
 
 	@include tablet {
 		text-align: left;
-		width: 410px;
+		max-width: 410px;
 		margin-bottom: 32px;
 	}
 
 	@include desktop {
 		margin-bottom: 40px;
+	}
+
+	@include large {
+		margin-bottom: 48px;
+		max-width: 530px;
 	}
 }
 
@@ -143,6 +161,11 @@
 		padding: 16px 28px;
 		font-size: 18px;
 		font-weight: 600;
+	}
+
+	@include large {
+		font-size: 20px;
+		padding: 18px 32px;
 	}
 }
 

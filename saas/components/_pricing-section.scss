@@ -1,4 +1,6 @@
 .pricing__container {
+	display: flex;
+	justify-content: center;
 	padding-top: 20px;
 	padding-bottom: 33px;
 	@include medium {
@@ -13,6 +15,10 @@
 	@include desktop {
 		padding: 48px 95px 56px 95px;
 	}
+
+	@include large {
+		padding: 48px 289px 56px 289px;
+	}
 }
 
 .pricing__frame {
@@ -20,22 +26,44 @@
 	flex-direction: column;
 	align-items: center;
 
-	padding: 18px 16px 33px 16px;
+	padding: 22px 16px 33px 16px;
 	width: 100%;
-	height: fit-content;
+	height: 100%;
+	max-width: 288px;
 
 	// border: 2px solid green;
 	border-radius: 12px;
-	outline: 2px solid red;
-	// background-image: url("/src/images/pricing-images/pricing-frame.svg");
+	// outline: 2px solid red;
+	background-image: url("/src/images/pricing-images/pricing-frame.svg");
 
-	background-position: center center;
+	background-position: center bottom;
 	background-repeat: no-repeat;
 	@include medium {
+		max-width: 343px;
+
 		padding: 18px 24px 56px 24px;
+		background-image: url("/src/images/pricing-images/pricing-frame-medium.svg");
 	}
 	@include tablet {
-		padding: 18px 75px 56px 75px;
+		max-width: 688px;
+
+		padding: 25px 75px 56px 75px;
+		background-image: url("/src/images/pricing-images/pricing-frame-tablet.svg");
+	}
+
+	@include desktop {
+		max-width: 800px;
+
+		padding: 45px 75px 56px 75px;
+
+		background-image: url("/src/images/pricing-images/pricing-frame-desktop.svg");
+	}
+
+	@include large {
+		max-width: 862px;
+
+		padding: 18px 149px 64px 143px;
+		background-image: url("/src/images/pricing-images/pricing-frame-large.svg");
 	}
 }
 
@@ -43,12 +71,33 @@
 	width: 40px;
 	height: 50px;
 
-	margin-bottom: 17px;
+	margin-bottom: 21px;
 
 	@include medium {
 		width: 44px;
 		height: 55px;
-		margin-bottom: 24px;
+		margin-bottom: 20px;
+	}
+
+	@include tablet {
+		width: 46px;
+		height: 58px;
+		margin-bottom: 30px;
+	}
+
+	@include desktop {
+		width: 50px;
+		height: 62px;
+
+		margin-bottom: 40px;
+	}
+
+	@include large {
+		width: 54px;
+		height: 68px;
+
+		margin-bottom: 2px;
+		margin-left: 6px;
 	}
 }
 
@@ -100,19 +149,8 @@
 	@include medium {
 		line-height: 16px; /* 100% */
 	}
-
-	@include tablet {
-	}
-
-	@include desktop {
-	}
-
-	@include large {
-	}
-
-	@include extra-large {
-	}
 }
+
 .pricing__price--highlighted {
 	color: #ff1f1f;
 	font-family: Inter;
@@ -120,21 +158,6 @@
 	font-style: normal;
 	font-weight: 600;
 	line-height: 67px; /* 100% */
-
-	@include medium {
-	}
-
-	@include tablet {
-	}
-
-	@include desktop {
-	}
-
-	@include large {
-	}
-
-	@include extra-large {
-	}
 }
 
 .pricing__discount {
@@ -152,18 +175,6 @@
 		margin-bottom: 32px;
 
 		font-size: 16px;
-	}
-
-	@include tablet {
-	}
-
-	@include desktop {
-	}
-
-	@include large {
-	}
-
-	@include extra-large {
 	}
 }
 
@@ -222,10 +233,8 @@
 		}
 	}
 
-	@include desktop {
-	}
-
 	@include large {
+		font-size: 20px;
 	}
 
 	@include extra-large {
@@ -256,10 +265,6 @@
 	opacity: 0.9;
 	background: #fff;
 
-	// margin-bottom: 16px;
-
-	// width: inherit;
-
 	&::placeholder {
 		color: rgba(60, 60, 67, 0.6);
 		font-feature-settings: "clig" off, "liga" off;
@@ -286,10 +291,7 @@
 	@include tablet {
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
-
 		flex-grow: 1;
-
-		// width: 70%;
 	}
 
 	@include desktop {
@@ -297,6 +299,7 @@
 	}
 
 	@include large {
+		flex-grow: 0.6;
 	}
 
 	@include extra-large {
@@ -338,8 +341,8 @@
 	}
 
 	@include large {
+		flex-grow: 0.4;
 	}
-
 	@include extra-large {
 	}
 }

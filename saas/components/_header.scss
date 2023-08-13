@@ -64,31 +64,14 @@ header {
 }
 
 .menu__login-link {
-	// @include small {
 	color: #fff;
 	text-align: center;
-	/* Body 1/Medium */
+
 	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 140%; /* 22.4px */
-	// }
-
-	@include medium {
-	}
-
-	@include tablet {
-	}
-
-	@include desktop {
-	}
-
-	@include large {
-	}
-
-	@include extra-large {
-	}
+	line-height: 140%;
 }
 
 .header-content {
@@ -105,10 +88,14 @@ header {
 	@include tablet {
 		align-items: flex-start;
 		width: 65%;
-		// flex-shrink: 1;
 	}
 	@include desktop {
 		padding-bottom: 91px;
+	}
+
+	@include large {
+		width: 530px;
+		padding-bottom: 141px;
 	}
 }
 
@@ -127,7 +114,6 @@ header {
 
 	@include medium {
 		font-size: 28px;
-
 		margin-bottom: 8px;
 	}
 
@@ -143,6 +129,7 @@ header {
 	}
 
 	@include large {
+		font-size: 42px;
 	}
 
 	@include extra-large {
@@ -201,6 +188,8 @@ header {
 	}
 
 	@include large {
+		font-size: 20px;
+		margin-bottom: 56px;
 	}
 
 	@include extra-large {

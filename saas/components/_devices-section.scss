@@ -122,8 +122,14 @@
 
 	@include tablet {
 		position: absolute;
-		right: -8%;
-		margin: 0;
+		right: -40px;
+		top: 0;
+	}
+	@include desktop {
+		right: -80px;
+	}
+	@include large {
+		right: -100px;
 	}
 }
 

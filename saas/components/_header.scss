@@ -1,11 +1,3 @@
-header {
-	background-color: #ab9c9c;
-	background-image: url("/bats-bg.svg");
-	background-repeat: no-repeat;
-	background-size: 100% 50%;
-	background-position: center bottom; /* Set background image position */
-}
-
 .menu {
 	display: flex;
 	justify-content: space-between;
@@ -151,9 +143,10 @@ header {
 	@include tablet {
 		position: absolute;
 		// right: -20%;
-		right: 5%;
+		right: 0;
+		top: 10%;
 
-		overflow: hidden;
+		// overflow: hidden;
 	}
 }
 

@@ -66,7 +66,55 @@
 					</h2>
 					<!-- <div class="header-content__image-wrapper"> -->
 
-					<img
+					<picture>
+						<source
+							media="(min-width: 1440px)"
+							srcset="
+								./src/images/header-images/header-right-picture1440.png    1x,
+								./src/images/header-images/header-right-picture1440@2x.png 2x,
+								./src/images/header-images/header-right-picture1440@3x.png 3x
+							"
+						/>
+						<source
+							media="(min-width: 990px)"
+							srcset="
+								./src/images/header-images/header-right-picture990.png    1x,
+								./src/images/header-images/header-right-picture990@2x.png 2x,
+								./src/images/header-images/header-right-picture990@3x.png 3x
+							"
+						/>
+						<source
+							media="(min-width: 768px)"
+							srcset="
+								./src/images/header-images/header-right-picture768.png    1x,
+								./src/images/header-images/header-right-picture768@2x.png 2x,
+								./src/images/header-images/header-right-picture768@3x.png 3x
+							"
+						/>
+						<source
+							media="(min-width: 375px)"
+							srcset="
+								./src/images/header-images/tv-medium.png   1x,
+								./src/images/header-images/tv-medium2x.png 2x,
+								./src/images/header-images/tv-medium3x.png 3x
+							"
+						/>
+						<source
+							media="(min-width: 320px)"
+							srcset="
+								./src/images/header-images/tv.png   1x,
+								./src/images/header-images/tv2x.png 2x,
+								./src/images/header-images/tv3x.png 3x
+							"
+						/>
+						<img
+							src="./src/images/header-images/tv.png"
+							alt="tv"
+							class="header-content__image"
+						/>
+					</picture>
+
+					<!-- <img
 						src="./src/images/header-images/tv.png"
 						srcset="
 							./src/images/header-images/tv.png   1x,
@@ -75,7 +123,7 @@
 						"
 						alt="tv"
 						class="header-content__image"
-					/>
+					/> -->
 					<!-- </div> -->
 					<p class="header-content__text">
 						Национальные, познавательные, детские, кино, спортивные, новостные и
@@ -86,9 +134,6 @@
 					>
 				</div>
 			</div>
-		</header>
-		<main>
-			<!-- make it invisible -->
 			<article>
 				<div class="container advantages__container">
 					<ul class="advantages__list">
@@ -139,6 +184,9 @@
 					</ul>
 				</div>
 			</article>
+		</header>
+		<main>
+			<!-- make it invisible -->
 
 			<section>
 				<div class="container pricing__container">
@@ -353,16 +401,54 @@
 							устройствах, среди которых: телевизор, компьютер, планшет или
 							смартфон
 						</p>
-						<img
-							src="./src/images/devices-images/tv-device.png"
-							srcset="
-								./src/images/devices-images/tv-device.png   1x,
-								./src/images/devices-images/tv-device2x.png 2x,
-								./src/images/devices-images/tv-device3x.png 3x
-							"
-							alt="tv-device"
-							class="devices__image"
-						/>
+
+						<picture>
+							<source
+								media="(min-width: 1440px)"
+								srcset="
+									./src/images/devices-images/Devices1440.png    1x,
+									./src/images/devices-images/Devices1440@2x.png 2x,
+									./src/images/devices-images/Devices1440@3x.png 3x
+								"
+							/>
+							<source
+								media="(min-width: 990px)"
+								srcset="
+									./src/images/devices-images/Devices990.png    1x,
+									./src/images/devices-images/Devices990@2x.png 2x,
+									./src/images/devices-images/Devices990@3x.png 3x
+								"
+							/>
+							<source
+								media="(min-width: 768px)"
+								srcset="
+									./src/images/devices-images/Devices768.png    1x,
+									./src/images/devices-images/Devices768@2x.png 2x,
+									./src/images/devices-images/Devices768@3x.png 3x
+								"
+							/>
+							<source
+								media="(min-width: 375px)"
+								srcset="
+									./src/images/devices-images/Devices375.png    1x,
+									./src/images/devices-images/Devices375@2x.png 2x,
+									./src/images/devices-images/Devices375@3x.png 3x
+								"
+							/>
+							<source
+								media="(min-width: 320px)"
+								srcset="
+									./src/images/devices-images/tv-device.png   1x,
+									./src/images/devices-images/tv-device2x.png 2x,
+									./src/images/devices-images/tv-device3x.png 3x
+								"
+							/>
+							<img
+								src="./src/images/devices-images/tv-device.png"
+								alt="tv-device"
+								class="devices__image"
+							/>
+						</picture>
 
 						<a href="#" class="devices__button"
 							>Протестировать 7 дней бесплатно</a

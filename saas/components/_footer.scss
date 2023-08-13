@@ -2,10 +2,10 @@
 	padding-top: 48px;
 	padding-bottom: 12px;
 
-	background-image: url("/tree-down3x.png");
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center bottom;
+	// background-image: url("/tree-down3x.png");
+	// background-repeat: no-repeat;
+	// background-size: 100%;
+	// background-position: center bottom;
 
 	@include medium {
 		padding-top: 64px;
@@ -52,7 +52,7 @@
 	}
 
 	@include large {
-		height: 140px;
+		height: 120px;
 	}
 }
 

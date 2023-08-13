@@ -1,4 +1,17 @@
+// main {
+// 	background-color: #131212;
+// 	background-image: url("/bg-channels.svg");
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// 	background-position: center;
+// }
+
 .channels__container {
+	background-image: url("/web@3x.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center left;
+
 	padding-top: 50px;
 	padding-bottom: 18px;
 	@include medium {

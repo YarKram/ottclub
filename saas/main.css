@@ -105,7 +105,7 @@ meter {
 
 header {
   background-color: #131212;
-  background-image: url("/src/images/bacground-images/bats-img-header-320.svg"), url("/src/images/bacground-images/bg-header-320.svg");
+  background-image: url("../src/images/bacground-images/bats-img-header-320.svg"), url("../src/images/bacground-images/bg-header-320.svg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
   background-position-y: bottom;
@@ -113,28 +113,28 @@ header {
 }
 @media screen and (min-width: 375px) {
   header {
-    background-image: url("/src/images/bacground-images/bats-img-header-375.svg"), url("/src/images/bacground-images/bg-header-375.svg");
+    background-image: url("../src/images/bacground-images/bats-img-header-375.svg"), url("../src/images/bacground-images/bg-header-375.svg");
   }
 }
 @media screen and (min-width: 768px) {
   header {
-    background-image: url("/src/images/bacground-images/bats-img-header-768.svg"), url("/src/images/bacground-images/bg-header-768.svg");
+    background-image: url("../src/images/bacground-images/bats-img-header-768.svg"), url("../src/images/bacground-images/bg-header-768.svg");
   }
 }
 @media screen and (min-width: 990px) {
   header {
-    background-image: url("/src/images/bacground-images/bats-img-header-990.svg"), url("/src/images/bacground-images/bg-header-990.svg");
+    background-image: url("../src/images/bacground-images/bats-img-header-990.svg"), url("../src/images/bacground-images/bg-header-990.svg");
   }
 }
 @media screen and (min-width: 1440px) {
   header {
-    background-image: url("/src/images/bacground-images/bats-img-header-1440.svg"), url("/src/images/bacground-images/bg-header-1440.svg");
+    background-image: url("../src/images/bacground-images/bats-img-header-1440.svg"), url("../src/images/bacground-images/bg-header-1440.svg");
   }
 }
 
 main {
   background-color: #131212;
-  background-image: url("/src/images/bacground-images/bg-channels-1440.svg");
+  background-image: url("../src/images/bacground-images/bg-channels-1440.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -142,29 +142,29 @@ main {
 
 footer {
   background-color: #131212;
-  background-image: url("/src/images/bacground-images/bg-img-footer-320.svg"), url("/src/images/bacground-images/bg-footer-320.svg");
+  background-image: url("../src/images/bacground-images/bg-img-footer-320.svg"), url("../src/images/bacground-images/bg-footer-320.svg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
   background-position: center bottom, center;
 }
 @media screen and (min-width: 375px) {
   footer {
-    background-image: url("/src/images/bacground-images/bg-img-footer-375.svg"), url("/src/images/bacground-images/bg-footer-375.svg");
+    background-image: url("../src/images/bacground-images/bg-img-footer-375.svg"), url("../src/images/bacground-images/bg-footer-375.svg");
   }
 }
 @media screen and (min-width: 768px) {
   footer {
-    background-image: url("/src/images/bacground-images/bg-img-footer-768.svg"), url("/src/images/bacground-images/bg-footer-768.svg");
+    background-image: url("../src/images/bacground-images/bg-img-footer-768.svg"), url("../src/images/bacground-images/bg-footer-768.svg");
   }
 }
 @media screen and (min-width: 990px) {
   footer {
-    background-image: url("/src/images/bacground-images/bg-img-footer-990.svg"), url("/src/images/bacground-images/bg-footer-990.svg");
+    background-image: url("../src/images/bacground-images/bg-img-footer-990.svg"), url("../src/images/bacground-images/bg-footer-990.svg");
   }
 }
 @media screen and (min-width: 1440px) {
   footer {
-    background-image: url("/src/images/bacground-images/bg-img-footer-1440.svg"), url("/src/images/bacground-images/bg-footer-1440.svg");
+    background-image: url("../src/images/bacground-images/bg-img-footer-1440.svg"), url("../src/images/bacground-images/bg-footer-1440.svg");
   }
 }
 
@@ -941,7 +941,7 @@ body {
   content: "";
   width: 40px;
   height: 40px;
-  background-image: url("/src/images/channels-images/tickets.svg");
+  background-image: url("../src/images/channels-images/tickets.svg");
   position: absolute;
   right: 33px;
   bottom: 18px;
@@ -1179,7 +1179,7 @@ body {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
-  background-image: url("/src/images/channels-images/arrow-icon.svg");
+  background-image: url("../src/images/channels-images/arrow-icon.svg");
 }
 
 .devices__container {

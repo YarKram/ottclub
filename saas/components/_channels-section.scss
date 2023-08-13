@@ -36,7 +36,7 @@
 		content: "";
 		width: 40px;
 		height: 40px;
-		background-image: url("/src/images/channels-images/tickets.svg");
+		background-image: url("../src/images/channels-images/tickets.svg");
 		position: absolute;
 		right: 33px;
 		bottom: 18px;
@@ -285,6 +285,6 @@
 		flex-shrink: 0;
 		width: 24px;
 		height: 24px;
-		background-image: url("/src/images/channels-images/arrow-icon.svg");
+		background-image: url("../src/images/channels-images/arrow-icon.svg");
 	}
 }

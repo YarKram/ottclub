@@ -1,13 +1,63 @@
 .footer__container {
 	padding-top: 48px;
 	padding-bottom: 12px;
+
+	background-image: url("/tree-down3x.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center bottom;
+
+	@include medium {
+		padding-top: 64px;
+		padding-bottom: 14px;
+	}
+
+	@include desktop {
+		padding-top: 40px;
+	}
+}
+
+.footer__section-flex {
+	@include tablet {
+		display: flex;
+		justify-content: space-between;
+	}
 }
 
 .navigation__list {
 	display: flex;
 	flex-direction: column;
+
 	gap: 8px;
 	margin-bottom: 32px;
+
+	@include medium {
+		height: 150px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-content: space-between;
+		margin-bottom: 30px;
+	}
+
+	@include tablet {
+		flex-direction: column;
+		width: 50%;
+	}
+
+	@include desktop {
+		width: calc(50% - 110px / 2);
+		column-gap: 110px;
+		height: 160px;
+	}
+}
+
+.navigation__item {
+	// width: 100%;
+
+	@include medium {
+		width: calc(50% - 4px); /* Adjust spacing as needed */
+	}
 }
 
 .navigation__link {
@@ -19,6 +69,26 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 140%; /* 19.6px */
+}
+
+.contact-info {
+	@include medium {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.contact-section-flex {
+	@include medium {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 32px;
+	}
+
+	@include tablet {
+		flex-direction: column;
+		gap: 32px;
+	}
 }
 
 .contact-section__title {
@@ -39,6 +109,9 @@
 	flex-direction: column;
 	gap: 8px;
 	margin-bottom: 16px;
+	@include medium {
+		margin-bottom: 0;
+	}
 }
 
 .contact-list__item {
@@ -71,6 +144,14 @@
 	flex-direction: row;
 	gap: 16px;
 	margin-bottom: 32px;
+
+	@include medium {
+		justify-content: flex-end;
+	}
+
+	@include tablet {
+		justify-content: flex-start;
+	}
 }
 
 .payment-options__list {
@@ -81,6 +162,11 @@
 	row-gap: 16px;
 	justify-content: center;
 	margin-bottom: 32px;
+
+	@include tablet {
+		justify-content: flex-start;
+		margin-bottom: 22px;
+	}
 }
 
 .footer__content {
@@ -88,10 +174,19 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 4px;
+
+	@include tablet {
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	@include tablet {
+		gap: 8px;
+	}
 }
 
 .footer__text {
-	color: #fff;
+	color: rgba(255, 255, 255, 1);
 
 	/* Footer/Caption 2 Regular */
 	font-family: Inter;
@@ -101,5 +196,12 @@
 	line-height: 140%; /* 15.4px */
 	&-uppercase {
 		text-transform: uppercase;
+	}
+
+	&:nth-child(2) {
+		&::before {
+			content: "•";
+			margin-right: 8px;
+		}
 	}
 }

@@ -35,81 +35,36 @@
 						alt="logo"
 						class="menu__logo"
 					/>
-					<!-- <ul class="menu__social menu__social--left">
-						<li class="menu__social-item">social facebook</li>
-						<li class="menu__social-item">social telegram</li>
-					</ul> -->
-					<ul class="menu__actions menu__actions--right">
-						<!-- <li class="menu__action">Регистрация</li> -->
-						<li class="menu__action">
-							<a href="#" class="menu__login-link">Войти</a>
-						</li>
-					</ul>
+					<div class="menu__wide-screen">
+						<ul class="menu__social menu__social--left">
+							<li class="menu__social-item">
+								<img
+									src="/src/images/header-images/fb-icon.svg"
+									alt="fb-icon"
+								/>
+							</li>
+							<li class="menu__social-item">
+								<img
+									src="/src/images/header-images/tg-icon.svg"
+									alt="tg-icon"
+								/>
+							</li>
+						</ul>
+						<ul class="menu__actions menu__actions--right">
+							<li class="menu__action menu__action-registration">
+								<a href="#" class="menu__login-link">Регистрация</a>
+							</li>
+							<li class="menu__action">
+								<a href="#" class="menu__login-link">Войти</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
 				<div class="header-content">
 					<h2 class="header-content__title">
 						Более 270 телеканалов в прямом эфире
 					</h2>
 					<!-- <div class="header-content__image-wrapper"> -->
-
-					<picture>
-						<!-- For screens with width greater than or equal to 1920px -->
-						<source
-							media="(min-width: 1920px)"
-							srcset="
-								./src/images/header-images/tv-1920.png   1x,
-								./src/images/header-images/tv-19202x.png 2x,
-								./src/images/header-images/tv-19203x.png 3x
-							"
-						/>
-						<!-- For screens with width greater than or equal to 1440px -->
-						<source
-							media="(min-width: 1440px)"
-							srcset="
-								./src/images/header-images/tv-1440.png   1x,
-								./src/images/header-images/tv-14402x.png 2x,
-								./src/images/header-images/tv-14403x.png 3x
-							"
-						/>
-						<!-- For screens with width greater than or equal to 990px -->
-						<source
-							media="(min-width: 990px)"
-							srcset="
-								./src/images/header-images/tv-990.png   1x,
-								./src/images/header-images/tv-9902x.png 2x,
-								./src/images/header-images/tv-9903x.png 3x
-							"
-						/>
-						<!-- For screens with width greater than or equal to 768px -->
-						<source
-							media="(min-width: 768px)"
-							srcset="
-								./src/images/header-images/tv-768.png   1x,
-								./src/images/header-images/tv-7682x.png 2x,
-								./src/images/header-images/tv-7683x.png 3x
-							"
-						/>
-						<!-- For screens with width greater than or equal to 375px -->
-						<source
-							media="(min-width: 375px)"
-							srcset="
-								./src/images/header-images/tv-375.png   1x,
-								./src/images/header-images/tv-3752x.png 2x,
-								./src/images/header-images/tv-3753x.png 3x
-							"
-						/>
-						<!-- Default image for smaller screens -->
-						<img
-							src="./src/images/header-images/tv.png"
-							srcset="
-								./src/images/header-images/tv.png   1x,
-								./src/images/header-images/tv2x.png 2x,
-								./src/images/header-images/tv3x.png 3x
-							"
-							alt="tv"
-							class="header-content__image"
-						/>
-					</picture>
 
 					<img
 						src="./src/images/header-images/tv.png"
@@ -134,28 +89,57 @@
 		</header>
 		<main>
 			<!-- make it invisible -->
-			<!-- <article>
-				<div class="container">
-					<ul>
-						<li>
-							<h3>Бесплатный тест</h3>
-							<p>7 дней бесплатного тестового просмотра</p>
+			<article>
+				<div class="container advantages__container">
+					<ul class="advantages__list">
+						<li class="advantages__item">
+							<img
+								src="/src/images/advantages-images/gift-icon.svg"
+								alt="gift-icon"
+								class="advantages__icon"
+							/>
+							<h3 class="advantages__title">Бесплатный тест</h3>
+							<p class="advantages__description">
+								7 дней бесплатного тестового просмотра
+							</p>
 						</li>
-						<li>
-							<h3>5 устройств = 1 подписка</h3>
-							<p>Подключайте 5 устройств в одной подписке</p>
+						<li class="advantages__item">
+							<img
+								src="/src/images/advantages-images/desc-icon.svg"
+								alt="desc-icon"
+								class="advantages__icon"
+							/>
+							<h3 class="advantages__title">5 устройств = 1 подписка</h3>
+							<p class="advantages__description">
+								Подключайте 5 устройств в одной подписке
+							</p>
 						</li>
-						<li>
-							<h3>Архив трансляций</h3>
-							<p>Смотрите 7 дней телеэфира в записи</p>
+						<li class="advantages__item">
+							<img
+								src="/src/images/advantages-images/tv-icon.svg"
+								alt="tv-icon"
+								class="advantages__icon"
+							/>
+							<h3 class="advantages__title">Архив трансляций</h3>
+							<p class="advantages__description">
+								Смотрите 7 дней телеэфира в записи
+							</p>
 						</li>
-						<li>
-							<h3>Без привязки к месту</h3>
-							<p>Смотрите любимые фильмы и передачи в любой точке мира</p>
+						<li class="advantages__item">
+							<img
+								src="/src/images/advantages-images/earth-icon.svg"
+								alt="earth-icon"
+								class="advantages__icon"
+							/>
+							<h3 class="advantages__title">Без привязки к месту</h3>
+							<p class="advantages__description">
+								Смотрите любимые фильмы и передачи в любой точке мира
+							</p>
 						</li>
 					</ul>
 				</div>
-			</article> -->
+			</article>
+
 			<section>
 				<div class="container pricing__container">
 					<div class="pricing__frame">
@@ -169,22 +153,44 @@
 							alt="eye"
 							class="pricing__image"
 						/>
-
-						<div class="pricing__details">
-							<h3 class="pricing__price">
-								<span class="pricing__price--highlighted">1€</span>/месяц
-							</h3>
-							<p class="pricing__discount">
-								Покупая подписку более, чем на 6 месяцев
-							</p>
+						<div class="pricing__positioning">
+							<div class="pricing__details">
+								<h3 class="pricing__price">
+									<span class="pricing__price--highlighted">1€</span>/месяц
+								</h3>
+								<p class="pricing__discount">
+									Покупая подписку более, чем на 6 месяцев
+								</p>
+							</div>
+							<ul class="pricing__features">
+								<li
+									class="pricing__feature"
+									data-tablet="Более 270 каналов"
+									data-mobile="Более 250 каналов"
+								></li>
+								<li
+									class="pricing__feature"
+									data-mobile="127 FullHD каналов"
+									data-tablet="127 FullHD каналов"
+								></li>
+								<li
+									class="pricing__feature"
+									data-tablet="Режим Ultra TV Sport"
+									data-mobile="Режим Ultra TV Sport"
+								></li>
+								<li
+									class="pricing__feature"
+									data-tablet="Архив каналов"
+									data-mobile="7 дней архива каналов"
+								></li>
+								<li
+									class="pricing__feature"
+									data-tablet="5 устройств"
+									data-mobile="5 устройств = 1 подписка"
+								></li>
+							</ul>
 						</div>
-						<ul class="pricing__features">
-							<li class="pricing__feature">Более 250 каналов</li>
-							<li class="pricing__feature">127 FullHD каналов</li>
-							<li class="pricing__feature">Режим Ultra TV Sport</li>
-							<li class="pricing__feature">7 дней архива каналов</li>
-							<li class="pricing__feature">5 устройств = 1 подписка</li>
-						</ul>
+
 						<form action="" class="pricing__form">
 							<input placeholder="Email" type="email" class="pricing__input" />
 							<button type="submit" class="pricing__button">
@@ -287,49 +293,49 @@
 							</li>
 							<li class="channels__item">
 								<img
-									src="./src/images/channels-images/one-plus-one.png"
+									src="./src/images/channels-images/e-film.png"
 									srcset="
-										./src/images/channels-images/one-plus-one.png   1x,
-										./src/images/channels-images/one-plus-one2x.png 2x,
-										./src/images/channels-images/one-plus-one3x.png 3x
+										./src/images/channels-images/e-film.png   1x,
+										./src/images/channels-images/e-film2x.png 2x,
+										./src/images/channels-images/e-film3x.png 3x
 									"
-									alt="channels-images/one-plus-one"
+									alt="channels-images/e-film"
 									class="channels__image"
 								/>
 							</li>
 							<li class="channels__item">
 								<img
-									src="./src/images/channels-images/one-plus-one.png"
+									src="./src/images/channels-images/m1.png"
 									srcset="
-										./src/images/channels-images/one-plus-one.png   1x,
-										./src/images/channels-images/one-plus-one2x.png 2x,
-										./src/images/channels-images/one-plus-one3x.png 3x
+										./src/images/channels-images/m1.png   1x,
+										./src/images/channels-images/m12x.png 2x,
+										./src/images/channels-images/m13x.png 3x
 									"
-									alt="channels-images/one-plus-one"
+									alt="channels-images/m1"
 									class="channels__image"
 								/>
 							</li>
 							<li class="channels__item">
 								<img
-									src="./src/images/channels-images/one-plus-one.png"
+									src="./src/images/channels-images/tet.png"
 									srcset="
-										./src/images/channels-images/one-plus-one.png   1x,
-										./src/images/channels-images/one-plus-one2x.png 2x,
-										./src/images/channels-images/one-plus-one3x.png 3x
+										./src/images/channels-images/tet       1x,
+										./src/images/channels-images/tet2x.png 2x,
+										./src/images/channels-images/tet3x.png 3x
 									"
-									alt="channels-images/one-plus-one"
+									alt="channels-images/tet"
 									class="channels__image"
 								/>
 							</li>
 							<li class="channels__item">
 								<img
-									src="./src/images/channels-images/one-plus-one.png"
+									src="./src/images/channels-images/two-plus-two.png"
 									srcset="
-										./src/images/channels-images/one-plus-one.png   1x,
-										./src/images/channels-images/one-plus-one2x.png 2x,
-										./src/images/channels-images/one-plus-one3x.png 3x
+										./src/images/channels-images/two-plus-two       1x,
+										./src/images/channels-images/two-plus-two2x.png 2x,
+										./src/images/channels-images/two-plus-two3x.png 3x
 									"
-									alt="channels-images/one-plus-one"
+									alt="channels-images/two-plus-two"
 									class="channels__image"
 								/>
 							</li>
@@ -444,57 +450,69 @@
 		</main>
 		<footer>
 			<div class="container footer__container">
-				<ul class="navigation__list">
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">О нас</a>
-					</li>
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">Пользовательское соглашение</a>
-					</li>
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">Политика конфиденциальности</a>
-					</li>
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">ТВ-Каналам</a>
-					</li>
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">Проверка скорости</a>
-					</li>
-					<li class="navigation__item">
-						<a href="#" class="navigation__link">Правила оформления подписки</a>
-					</li>
-				</ul>
+				<div class="footer__section-flex">
+					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">О нас</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link"
+								>Пользовательское соглашение</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link"
+								>Политика конфиденциальности</a
+							>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">ТВ-Каналам</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link">Проверка скорости</a>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link"
+								>Правила оформления подписки</a
+							>
+						</li>
+					</ul>
 
-				<div class="contact-section">
-					<h3 class="contact-section__title">Помощь</h3>
-					<ul class="contact-list">
-						<li class="contact-list__item">+442045772169 (Англия)</li>
-						<li class="contact-list__item">+420255708953 (Европа)</li>
-						<li class="contact-list__item">+97233751723 (Израиль)</li>
-						<li class="contact-list__item">support@ottclub.cc</li>
-					</ul>
+					<div class="contact-info">
+						<h3 class="contact-section__title">Помощь</h3>
+						<div class="contact-section-flex">
+							<ul class="contact-list">
+								<li class="contact-list__item">+442045772169 (Англия)</li>
+								<li class="contact-list__item">+420255708953 (Европа)</li>
+								<li class="contact-list__item">+97233751723 (Израиль)</li>
+								<li class="contact-list__item">support@ottclub.cc</li>
+							</ul>
+
+							<div class="chat-support">
+								<h3 class="chat-support__title">Чат-поддержка</h3>
+								<ul class="contact-list chat-support__contact-list">
+									<li class="contact-list__item chat-support__contact-item">
+										<a href="#">
+											<img
+												src="./src/images/footer-images/social-logos/logo-whatsapp.svg"
+												alt="logo-whatsapp"
+											/>
+										</a>
+									</li>
+									<li class="contact-list__item chat-support__contact-item">
+										<a href="#">
+											<img
+												src="./src/images/footer-images/social-logos/logo-telegram.svg"
+												alt="logo-telegram"
+											/>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="chat-support">
-					<h3 class="chat-support__title">Чат-поддержка</h3>
-					<ul class="contact-list chat-support__contact-list">
-						<li class="contact-list__item chat-support__contact-item">
-							<a href="#">
-								<img
-									src="./src/images/footer-images/social-logos/logo-whatsapp.svg"
-									alt="logo-whatsapp"
-								/>
-							</a>
-						</li>
-						<li class="contact-list__item chat-support__contact-item">
-							<a href="#">
-								<img
-									src="./src/images/footer-images/social-logos/logo-telegram.svg"
-									alt="logo-telegram"
-								/>
-							</a>
-						</li>
-					</ul>
-				</div>
+
 				<div class="payment-options">
 					<ul class="payment-options__list">
 						<li class="payment-options__item">

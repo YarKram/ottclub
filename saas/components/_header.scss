@@ -1,21 +1,9 @@
 header {
-	background: #131212;
-	background-image: url("/bg-general.svg");
-	// z-index: -2;
-	// position: relative;
-
-	// &::after {
-	// 	content: "";
-	// 	background-image: url("/bats-bg.svg");
-	// 	height: 279px;
-	// 	position: absolute;
-	// 	bottom: -15px;
-	// 	left: 0;
-	// 	width: 100%;
-	// 	opacity: 0.7;
-	// 	background-size: cover;
-	// 	// z-index: -1;
-	// }
+	background-color: #ab9c9c;
+	background-image: url("/bats-bg.svg");
+	background-repeat: no-repeat;
+	background-size: 100% 50%;
+	background-position: center bottom; /* Set background image position */
 }
 
 .menu {
@@ -28,6 +16,31 @@ header {
 	@include medium {
 		padding-top: 44px;
 	}
+
+	@include tablet {
+		padding-top: 23px;
+		padding-bottom: 23px;
+	}
+}
+
+.menu__wide-screen {
+	display: flex;
+	gap: 48px;
+	align-items: center;
+}
+
+.menu__social {
+	display: none;
+
+	@include tablet {
+		display: flex;
+		gap: 24px;
+	}
+}
+
+.menu__actions--right {
+	display: flex;
+	gap: 24px;
 }
 
 .menu__action {
@@ -39,6 +52,15 @@ header {
 
 	border-radius: 5px;
 	border: 2px solid #fff;
+}
+
+.menu__action-registration {
+	display: none;
+
+	@include tablet {
+		display: block;
+		border: none;
+	}
 }
 
 .menu__login-link {
@@ -80,6 +102,14 @@ header {
 		padding-top: 24px;
 		padding-bottom: 24px;
 	}
+	@include tablet {
+		align-items: flex-start;
+		width: 65%;
+		// flex-shrink: 1;
+	}
+	@include desktop {
+		padding-bottom: 91px;
+	}
 }
 
 .header-content__title {
@@ -96,15 +126,20 @@ header {
 	// }
 
 	@include medium {
-		font-size: 24px;
+		font-size: 28px;
 
 		margin-bottom: 8px;
 	}
 
 	@include tablet {
+		font-size: 32px;
+		margin-bottom: 24px;
+		text-align: left;
 	}
 
 	@include desktop {
+		font-size: 38px;
+		margin-bottom: 32px;
 	}
 
 	@include large {
@@ -121,7 +156,18 @@ header {
 	// border-radius: 0.776px;
 	// border: 1.551px solid #020202;
 
-	margin: 0 auto 20px auto;
+	margin-bottom: 16px;
+
+	@include medium {
+		margin-bottom: 13px;
+	}
+	@include tablet {
+		position: absolute;
+		// right: -20%;
+		right: 5%;
+
+		overflow: hidden;
+	}
 }
 
 .header-content__text {
@@ -135,15 +181,23 @@ header {
 	line-height: 140%; /* 21px */
 
 	margin-bottom: 24px;
+	opacity: 0.8;
 	// }
 
 	@include medium {
+		font-size: 16px;
+		margin-bottom: 32px;
 	}
 
 	@include tablet {
+		font-size: 17px;
+		margin-bottom: 34px;
+		text-align: left;
 	}
 
 	@include desktop {
+		font-size: 18px;
+		margin-bottom: 48px;
 	}
 
 	@include large {
@@ -173,12 +227,18 @@ header {
 	// }
 
 	@include medium {
+		padding: 16px 24px;
+
+		font-size: 17px;
 	}
 
 	@include tablet {
 	}
 
 	@include desktop {
+		padding: 16px 28px;
+
+		font-size: 18px;
 	}
 
 	@include large {

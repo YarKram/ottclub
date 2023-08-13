@@ -1,0 +1,82 @@
+.advantages__container {
+	display: none;
+	@include tablet {
+		display: block;
+		padding-top: 24px;
+		padding-bottom: 41px;
+	}
+
+	@include desktop {
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+	/* Your styles for the article element */
+}
+
+.advantages__list {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	/* Your styles for the list element */
+	@include desktop {
+		gap: 24px;
+	}
+}
+
+.advantages__item {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	flex-wrap: wrap;
+	gap: 12px;
+
+	@include desktop {
+		gap: 0;
+		align-items: flex-start;
+		width: calc(100% / 4);
+	}
+
+	/* Your styles for each item element */
+}
+
+.advantages__icon {
+	opacity: 0.9;
+	@include desktop {
+		margin-bottom: 20px;
+		width: 64px;
+		height: 64px;
+	}
+}
+
+.advantages__title {
+	color: rgba(255, 255, 255, 0.9);
+	text-align: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 24px; /* 150% */
+	text-align: left;
+
+	@include desktop {
+		margin-bottom: 16px;
+		line-height: 18px; /* 112.5% */
+	}
+}
+
+.advantages__description {
+	display: none;
+
+	@include desktop {
+		display: block;
+		color: #fff;
+
+		/* Body 1/Regular */
+		font-family: Inter;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 150%; /* 24px */
+	}
+	/* Your styles for the description element */
+}

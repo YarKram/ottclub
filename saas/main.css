@@ -105,7 +105,7 @@ meter {
 
 header {
   background-color: #131212;
-  background-image: url("./src/images/bacground-images/bats-img-header-320.svg"), url("./src/images/bacground-images/bg-header-320.svg");
+  background-image: url("/src/images/bacground-images/bats-img-header-320.svg"), url("/src/images/bacground-images/bg-header-320.svg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
   background-position-y: bottom;
@@ -113,28 +113,28 @@ header {
 }
 @media screen and (min-width: 375px) {
   header {
-    background-image: url("./src/images/bacground-images/bats-img-header-375.svg"), url("./src/images/bacground-images/bg-header-375.svg");
+    background-image: url("/src/images/bacground-images/bats-img-header-375.svg"), url("/src/images/bacground-images/bg-header-375.svg");
   }
 }
 @media screen and (min-width: 768px) {
   header {
-    background-image: url("./src/images/bacground-images/bats-img-header-768.svg"), url("./src/images/bacground-images/bg-header-768.svg");
+    background-image: url("/src/images/bacground-images/bats-img-header-768.svg"), url("/src/images/bacground-images/bg-header-768.svg");
   }
 }
 @media screen and (min-width: 990px) {
   header {
-    background-image: url("./src/images/bacground-images/bats-img-header-990.svg  "), url("./src/images/bacground-images/bg-header-990.svg");
+    background-image: url("/src/images/bacground-images/bats-img-header-990.svg  "), url("/src/images/bacground-images/bg-header-990.svg");
   }
 }
 @media screen and (min-width: 1440px) {
   header {
-    background-image: url("./src/images/bacground-images/bats-img-header-1440.svg"), url("./src/images/bacground-images/bg-header-1440.svg");
+    background-image: url("/src/images/bacground-images/bats-img-header-1440.svg"), url("/src/images/bacground-images/bg-header-1440.svg");
   }
 }
 
 main {
   background-color: #131212;
-  background-image: url("./src/images/bacground-images/bg-channels-1440.svg");
+  background-image: url("/src/images/bacground-images/bg-channels-1440.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -142,29 +142,29 @@ main {
 
 footer {
   background-color: #131212;
-  background-image: url("./src/images/bacground-images/bg-img-footer-320.svg"), url("./src/images/bacground-images/bg-footer-320.svg");
+  background-image: url("/src/images/bacground-images/bg-img-footer-320.svg"), url("/src/images/bacground-images/bg-footer-320.svg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
   background-position: center bottom, center;
 }
 @media screen and (min-width: 375px) {
   footer {
-    background-image: url("./src/images/bacground-images/bg-img-footer-375.svg"), url("./src/images/bacground-images/bg-footer-375.svg");
+    background-image: url("/src/images/bacground-images/bg-img-footer-375.svg"), url("/src/images/bacground-images/bg-footer-375.svg");
   }
 }
 @media screen and (min-width: 768px) {
   footer {
-    background-image: url("./src/images/bacground-images/bg-img-footer-768.svg"), url("./src/images/bacground-images/bg-footer-768.svg");
+    background-image: url("/src/images/bacground-images/bg-img-footer-768.svg"), url("/src/images/bacground-images/bg-footer-768.svg");
   }
 }
 @media screen and (min-width: 990px) {
   footer {
-    background-image: url("./src/images/bacground-images/bg-img-footer-990.svg"), url("./src/images/bacground-images/bg-footer-990.svg");
+    background-image: url("/src/images/bacground-images/bg-img-footer-990.svg"), url("/src/images/bacground-images/bg-footer-990.svg");
   }
 }
 @media screen and (min-width: 1440px) {
   footer {
-    background-image: url("./src/images/bacground-images/bg-img-footer-1440.svg"), url("./src/images/bacground-images/bg-footer-1440.svg");
+    background-image: url("/src/images/bacground-images/bg-img-footer-1440.svg"), url("/src/images/bacground-images/bg-footer-1440.svg");
   }
 }
 
@@ -575,7 +575,7 @@ body {
   height: 100%;
   max-width: 288px;
   border-radius: 12px;
-  background-image: url("./src/images/pricing-images/pricing-frame.svg");
+  background-image: url("/src/images/pricing-images/pricing-frame.svg");
   background-position: center bottom;
   background-repeat: no-repeat;
 }
@@ -583,28 +583,28 @@ body {
   .pricing__frame {
     max-width: 343px;
     padding: 18px 24px 56px 24px;
-    background-image: url("./src/images/pricing-images/pricing-frame-medium.svg");
+    background-image: url("/src/images/pricing-images/pricing-frame-medium.svg");
   }
 }
 @media screen and (min-width: 768px) {
   .pricing__frame {
     max-width: 688px;
     padding: 25px 75px 56px 75px;
-    background-image: url("./src/images/pricing-images/pricing-frame-tablet.svg");
+    background-image: url("/src/images/pricing-images/pricing-frame-tablet.svg");
   }
 }
 @media screen and (min-width: 990px) {
   .pricing__frame {
     max-width: 800px;
     padding: 45px 75px 56px 75px;
-    background-image: url("./src/images/pricing-images/pricing-frame-desktop.svg");
+    background-image: url("/src/images/pricing-images/pricing-frame-desktop.svg");
   }
 }
 @media screen and (min-width: 1440px) {
   .pricing__frame {
     max-width: 862px;
     padding: 18px 149px 64px 143px;
-    background-image: url("./src/images/pricing-images/pricing-frame-large.svg");
+    background-image: url("/src/images/pricing-images/pricing-frame-large.svg");
   }
 }
 
@@ -747,7 +747,7 @@ body {
   content: "";
   width: 24px;
   height: 24px;
-  background-image: url("./src/images/pricing-images/pricing-list-icon.svg");
+  background-image: url("/src/images/pricing-images/pricing-list-icon.svg");
 }
 .pricing__feature::after {
   content: attr(data-mobile);

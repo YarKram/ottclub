@@ -33,7 +33,7 @@
 
 	border-radius: 12px;
 
-	background-image: url("./src/images/pricing-images/pricing-frame.svg");
+	background-image: url("/src/images/pricing-images/pricing-frame.svg");
 
 	background-position: center bottom;
 	background-repeat: no-repeat;
@@ -41,13 +41,13 @@
 		max-width: 343px;
 
 		padding: 18px 24px 56px 24px;
-		background-image: url("./src/images/pricing-images/pricing-frame-medium.svg");
+		background-image: url("/src/images/pricing-images/pricing-frame-medium.svg");
 	}
 	@include tablet {
 		max-width: 688px;
 
 		padding: 25px 75px 56px 75px;
-		background-image: url("./src/images/pricing-images/pricing-frame-tablet.svg");
+		background-image: url("/src/images/pricing-images/pricing-frame-tablet.svg");
 	}
 
 	@include desktop {
@@ -55,14 +55,14 @@
 
 		padding: 45px 75px 56px 75px;
 
-		background-image: url("./src/images/pricing-images/pricing-frame-desktop.svg");
+		background-image: url("/src/images/pricing-images/pricing-frame-desktop.svg");
 	}
 
 	@include large {
 		max-width: 862px;
 
 		padding: 18px 149px 64px 143px;
-		background-image: url("./src/images/pricing-images/pricing-frame-large.svg");
+		background-image: url("/src/images/pricing-images/pricing-frame-large.svg");
 	}
 }
 
@@ -205,7 +205,7 @@
 		content: "";
 		width: 24px;
 		height: 24px;
-		background-image: url("./src/images/pricing-images/pricing-list-icon.svg");
+		background-image: url("/src/images/pricing-images/pricing-list-icon.svg");
 	}
 
 	&::after {

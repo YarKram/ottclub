@@ -158,22 +158,27 @@
 .channels__list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 16px;
+	row-gap: 16px;
 	margin-bottom: 19px;
+	justify-content: space-between;
 
 	@include medium {
 		margin-bottom: 26px;
 	}
 
 	@include tablet {
-		gap: 23px;
 		row-gap: 32px;
+
 		align-items: flex-start;
 		margin-bottom: 30px;
 	}
 
+	// @include desktop {
+	// 	gap: 24px;
+	// }
+
 	@include large {
-		justify-content: space-between;
+		gap: 32px;
 	}
 }
 

@@ -5,7 +5,7 @@ header {
 		url("/src/images/bacground-images/bg-header-320.svg");
 	background-repeat: no-repeat;
 	background-size: 100%, cover;
-	// background-position: 0 50%, bottom; /* Set background image position */
+
 	background-position-y: bottom;
 	background-position-x: center;
 
@@ -16,15 +16,13 @@ header {
 		//375
 	}
 	@include tablet {
-		// background-color: transparent;
 		background-image: url("/src/images/bacground-images/bats-img-header-768.svg"),
 			url("/src/images/bacground-images/bg-header-768.svg");
-		// background-size: 100% auto, cover;
 
 		//768
 	}
 	@include desktop {
-		background-image: url("/src/images/bacground-images/bats-img-header-990.svg  "),
+		background-image: url("/src/images/bacground-images/bats-img-header-990.svg"),
 			url("/src/images/bacground-images/bg-header-990.svg");
 		//990
 	}
@@ -45,8 +43,6 @@ main {
 
 footer {
 	background-color: #131212;
-
-	// background-image: url("/tree-down3x.png"), url("/bg-footer.svg");
 
 	background-image: url("/src/images/bacground-images/bg-img-footer-320.svg"),
 		url("/src/images/bacground-images/bg-footer-320.svg");

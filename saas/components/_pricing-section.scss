@@ -31,9 +31,8 @@
 	height: 100%;
 	max-width: 288px;
 
-	// border: 2px solid green;
 	border-radius: 12px;
-	// outline: 2px solid red;
+
 	background-image: url("/src/images/pricing-images/pricing-frame.svg");
 
 	background-position: center bottom;
@@ -125,8 +124,6 @@
 .pricing__features {
 	@include tablet {
 		width: 50%;
-		// display: flex;
-		// flex-direction: column;
 	}
 }
 

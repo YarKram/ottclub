@@ -103,10 +103,6 @@ meter {
   all: revert;
 }
 
-body {
-  background-color: #000000;
-}
-
 header {
   background-color: #131212;
   background-image: url("/src/images/bacground-images/bats-img-header-320.svg"), url("/src/images/bacground-images/bg-header-320.svg");
@@ -429,9 +425,9 @@ body {
     font-size: 18px;
   }
 }
+
 .advantages__container {
   display: none;
-  /* Your styles for the article element */
 }
 @media screen and (min-width: 768px) {
   .advantages__container {
@@ -457,7 +453,6 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
-  /* Your styles for the list element */
 }
 @media screen and (min-width: 990px) {
   .advantages__list {
@@ -476,7 +471,6 @@ body {
   align-content: center;
   flex-wrap: wrap;
   gap: 12px;
-  /* Your styles for each item element */
 }
 @media screen and (min-width: 990px) {
   .advantages__item {
@@ -511,13 +505,13 @@ body {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   text-align: center;
 }
 @media screen and (min-width: 990px) {
   .advantages__title {
     margin-bottom: 16px;
-    line-height: 18px; /* 112.5% */
+    line-height: 18px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -529,7 +523,6 @@ body {
 
 .advantages__description {
   display: none;
-  /* Your styles for the description element */
 }
 @media screen and (min-width: 990px) {
   .advantages__description {
@@ -540,7 +533,7 @@ body {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
   }
 }
 
@@ -939,7 +932,7 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
-  line-height: 140%; /* 33.6px */
+  line-height: 140%;
   opacity: 0.9;
   margin-bottom: 8px;
   position: relative;
@@ -1066,6 +1059,7 @@ body {
     font-size: 16px;
   }
 }
+
 .channels__list {
   display: flex;
   flex-wrap: wrap;
@@ -1646,7 +1640,7 @@ body {
 
 @media screen and (min-width: 375px) {
   .navigation__item {
-    width: calc(50% - 4px); /* Adjust spacing as needed */
+    width: calc(50% - 4px);
   }
 }
 
@@ -1683,7 +1677,6 @@ body {
 
 .contact-section__title {
   color: #fff;
-  /* Footer/Subtitle Semi Bold */
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
@@ -1706,7 +1699,6 @@ body {
 
 .contact-list__item {
   color: #fff;
-  /* Footer/Body Regular */
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -1717,7 +1709,6 @@ body {
 
 .chat-support__title {
   color: #fff;
-  /* Footer/Body Regular */
   font-family: Inter;
   font-size: 14px;
   font-style: normal;

@@ -92,7 +92,6 @@
 }
 
 .header-content__title {
-	// @include small {
 	color: #fff;
 	text-align: center;
 	font-family: Inter;
@@ -102,7 +101,6 @@
 	line-height: 120%; /* 28.8px */
 
 	margin-bottom: 7px;
-	// }
 
 	@include medium {
 		font-size: 28px;
@@ -132,9 +130,6 @@
 	display: flex;
 	flex-shrink: 0;
 
-	// border-radius: 0.776px;
-	// border: 1.551px solid #020202;
-
 	margin-bottom: 16px;
 
 	@include medium {
@@ -142,16 +137,13 @@
 	}
 	@include tablet {
 		position: absolute;
-		// right: -20%;
+
 		right: 0;
 		top: 10%;
-
-		// overflow: hidden;
 	}
 }
 
 .header-content__text {
-	// @include small {
 	color: #fff;
 	text-align: center;
 	font-family: Inter;
@@ -190,7 +182,6 @@
 }
 
 .header-content__link {
-	// @include small {
 	display: inline-flex;
 	padding: 14px;
 	justify-content: center;
@@ -206,7 +197,6 @@
 	font-style: normal;
 	font-weight: 600;
 	line-height: 140%; /* 21px */
-	// }
 
 	@include medium {
 		padding: 16px 24px;
@@ -214,18 +204,9 @@
 		font-size: 17px;
 	}
 
-	@include tablet {
-	}
-
 	@include desktop {
 		padding: 16px 28px;
 
 		font-size: 18px;
-	}
-
-	@include large {
-	}
-
-	@include extra-large {
 	}
 }

@@ -2,11 +2,6 @@
 	padding-top: 48px;
 	padding-bottom: 12px;
 
-	// background-image: url("/tree-down3x.png");
-	// background-repeat: no-repeat;
-	// background-size: 100%;
-	// background-position: center bottom;
-
 	@include medium {
 		padding-top: 64px;
 		padding-bottom: 14px;
@@ -60,13 +55,8 @@
 	// width: 100%;
 
 	@include medium {
-		width: calc(50% - 4px); /* Adjust spacing as needed */
+		width: calc(50% - 4px);
 	}
-
-	// @include large {
-	// 	width: calc(50% - 55px); /* Adjust spacing as needed */
-
-	// }
 }
 
 .navigation__link {
@@ -103,7 +93,6 @@
 .contact-section__title {
 	color: #fff;
 
-	/* Footer/Subtitle Semi Bold */
 	font-family: Inter;
 	font-size: 16px;
 	font-style: normal;
@@ -126,7 +115,6 @@
 .contact-list__item {
 	color: #fff;
 
-	/* Footer/Body Regular */
 	font-family: Inter;
 	font-size: 14px;
 	font-style: normal;
@@ -139,7 +127,6 @@
 .chat-support__title {
 	color: #fff;
 
-	/* Footer/Body Regular */
 	font-family: Inter;
 	font-size: 14px;
 	font-style: normal;

@@ -1,15 +1,12 @@
 .faq__container {
 	padding-top: 16px;
-	// padding-bottom: 48px;
 
 	@include medium {
 		padding-top: 32px;
-		// padding-bottom: 87px;
 	}
 
 	@include tablet {
 		padding-top: 40px;
-		// padding-bottom: 20px;
 	}
 
 	@include desktop {
@@ -80,13 +77,6 @@
 	padding-bottom: 20px;
 
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-
-	// &::before {
-	// 	content: "";
-	// 	background-image: url("/src/images/faq-images/icon-down.svg");
-	// 	width: 24px;
-	// 	height: 24px;
-	// }
 
 	@include desktop {
 		padding-bottom: 27px;

@@ -97,7 +97,7 @@
 		padding-bottom: 24px;
 	}
 	@include tablet {
-		position: relative;
+		// position: relative;
 
 		align-items: flex-start;
 		width: 65%;
@@ -157,10 +157,9 @@
 .header-content__image {
 	display: flex;
 	// flex-shrink: 0;
+	// display: contents;
 
 	margin-bottom: 16px;
-	height: auto;
-	width: 100%;
 
 	@include medium {
 		margin-bottom: 13px;
@@ -168,23 +167,23 @@
 	@include tablet {
 		position: absolute;
 		// right: 0;
-		left: 475px;
-		top: 8px;
-		margin-bottom: 0;
+		left: 451px;
+		top: 77px;
+		// margin-bottom: 0;
 	}
 	@include desktop {
-		top: 1px;
-		left: 487px;
+		top: 58px;
+		left: 499px;
 	}
 	@include large {
-		top: 6px;
-		left: 735px;
+		top: 56px;
+		left: 693px;
 	}
 	@include extra-large {
 		// width: 1006px;
-
-		top: 4px;
-		left: 975px;
+		// right: 0px;
+		top: 76px;
+		left: 917px;
 	}
 }
 
@@ -258,5 +257,6 @@
 	@include extra-large {
 		font-size: 26px;
 		padding: 24px 40px;
+		// margin-bottom: 194px;
 	}
 }

@@ -6,6 +6,10 @@
 		padding-top: 26px;
 	}
 
+	@include tablet {
+		position: relative;
+	}
+
 	@include desktop {
 		padding-top: 83px;
 	}
@@ -26,7 +30,7 @@
 	}
 
 	@include tablet {
-		position: relative;
+		// position: relative;
 		align-items: flex-start;
 		padding-bottom: 54px;
 	}
@@ -78,6 +82,7 @@
 	@include extra-large {
 		font-size: 52px;
 		margin-bottom: 30px;
+		min-width: 715px;
 	}
 }
 
@@ -132,14 +137,17 @@
 
 	@include tablet {
 		position: absolute;
-		right: -40px;
+		top: 15px;
 		top: 0;
+		right: 0;
 	}
 	@include desktop {
-		right: -80px;
+		top: 45px;
+
+		right: 0;
 	}
 	@include large {
-		right: -100px;
+		top: 0;
 	}
 }
 

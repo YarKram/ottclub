@@ -13,11 +13,15 @@
 	}
 
 	@include desktop {
-		padding: 48px 95px 56px 95px;
+		padding: 48px 56px;
 	}
 
 	@include large {
-		padding: 48px 289px 56px 289px;
+		padding: 48px 56px;
+	}
+
+	@include extra-large {
+		padding: 60px 80px;
 	}
 }
 
@@ -26,44 +30,83 @@
 	flex-direction: column;
 	align-items: center;
 
-	padding: 22px 16px 33px 16px;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	max-width: 288px;
 
-	border-radius: 12px;
+	padding: 22px 16px 33px 16px;
 
 	background-image: url("../src/images/pricing-images/pricing-frame.svg");
 
 	background-position: center bottom;
 	background-repeat: no-repeat;
-	@include medium {
-		max-width: 343px;
 
+	@include medium {
 		padding: 18px 24px 56px 24px;
+
+		max-width: 343px;
 		background-image: url("../src/images/pricing-images/pricing-frame-medium.svg");
 	}
 	@include tablet {
-		max-width: 688px;
-
 		padding: 25px 75px 56px 75px;
+
+		max-width: 688px;
 		background-image: url("../src/images/pricing-images/pricing-frame-tablet.svg");
 	}
 
 	@include desktop {
-		max-width: 800px;
-
 		padding: 45px 75px 56px 75px;
 
+		max-width: 800px;
 		background-image: url("../src/images/pricing-images/pricing-frame-desktop.svg");
 	}
 
 	@include large {
-		max-width: 862px;
-
 		padding: 18px 149px 64px 143px;
+
+		max-width: 862px;
 		background-image: url("../src/images/pricing-images/pricing-frame-large.svg");
 	}
+
+	@include extra-large {
+		padding: 28px 149px 64px 143px;
+
+		max-width: 1149px;
+		background-image: url("../src/images/pricing-images/pricing-frame-extra-large.svg");
+	}
+}
+
+.pricing__inner-frame {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+
+	// padding: 22px 33px;
+
+	// @include medium {
+	// 	// max-width: 343px;
+	// 	// padding: 18px 24px 56px 24px;
+	// }
+	// @include tablet {
+	// 	// max-width: 688px;
+	// 	// padding: 25px 75px 56px 75px;
+	// }
+
+	// @include desktop {
+	// 	// max-width: 800px;
+	// 	padding: 45px 75px 56px 75px;
+	// }
+
+	// @include large {
+	// 	// max-width: 862px;
+	// 	padding: 18px 149px 64px 143px;
+	// }
+
+	// @include extra-large {
+	// 	// max-width: 1149px;
+	// 	padding: 28px 149px 64px 143px;
+	// }
 }
 
 .pricing__image {
@@ -101,8 +144,16 @@
 }
 
 .pricing__positioning {
+	margin-bottom: 32px;
+
 	@include tablet {
 		display: flex;
+	}
+	@include desktop {
+		margin-bottom: 40px;
+	}
+	@include extra-large {
+		margin-bottom: 50px;
 	}
 }
 
@@ -114,6 +165,7 @@
 		padding: 0 70px 0 0;
 	}
 }
+
 .pricing__features {
 	@include tablet {
 		padding-left: 42px;
@@ -146,6 +198,10 @@
 	@include medium {
 		line-height: 16px; /* 100% */
 	}
+
+	@include extra-large {
+		font-size: 20px;
+	}
 }
 
 .pricing__price--highlighted {
@@ -168,10 +224,15 @@
 
 	margin-bottom: 24px;
 	opacity: 0.8;
+
 	@include medium {
 		margin-bottom: 32px;
 
 		font-size: 16px;
+	}
+
+	@include extra-large {
+		font-size: 20px;
 	}
 }
 
@@ -180,11 +241,14 @@
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 16px;
-	margin-bottom: 32px;
+	// margin-bottom: 32px;
 
 	@include desktop {
-		margin-bottom: 40px;
+		// margin-bottom: 40px;
 		gap: 20px;
+	}
+	@include extra-large {
+		gap: 26px;
 	}
 }
 
@@ -231,10 +295,14 @@
 	}
 
 	@include large {
+		gap: 16px;
 		font-size: 20px;
+		font-weight: 400;
 	}
 
 	@include extra-large {
+		font-size: 26px;
+		gap: 20px;
 	}
 }
 
@@ -246,12 +314,20 @@
 
 	@include tablet {
 		gap: 0;
-
 		flex-direction: row;
 	}
 }
 
 .pricing__input {
+	color: rgba(60, 60, 67, 0.6);
+	font-feature-settings: "clig" off, "liga" off;
+	font-family: Inter;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 23px; /* 153.333% */
+	letter-spacing: 0.15px;
+
 	display: flex;
 	padding: 15px 16px;
 	align-items: center;
@@ -263,36 +339,22 @@
 	background: #fff;
 
 	&::placeholder {
-		color: rgba(60, 60, 67, 0.6);
-		font-feature-settings: "clig" off, "liga" off;
-		font-family: Inter;
-		font-size: 15px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 23px; /* 153.333% */
-		letter-spacing: 0.15px;
-
 		opacity: 0.9;
-		@include medium {
-			font-size: 17px;
-		}
-
-		@include tablet {
-			font-size: 17px;
-		}
-		@include desktop {
-			font-size: 18px;
-		}
+	}
+	@include medium {
+		font-size: 17px;
 	}
 
 	@include tablet {
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
 		flex-grow: 1;
+		font-size: 17px;
 	}
 
 	@include desktop {
 		flex-grow: 0.85;
+		font-size: 18px;
 	}
 
 	@include large {
@@ -300,6 +362,11 @@
 	}
 
 	@include extra-large {
+		padding: 19px 20px 20px 20px;
+		font-size: 22px;
+		font-weight: 400;
+		line-height: 30px; /* 136.364% */
+		letter-spacing: 0.2px;
 	}
 }
 
@@ -319,6 +386,7 @@
 	font-style: normal;
 	font-weight: 600;
 	line-height: normal;
+
 	@include medium {
 		font-size: 18px;
 	}
@@ -335,11 +403,16 @@
 	@include desktop {
 		flex-grow: 0.15;
 		font-size: 17px;
+		padding: 16px 40px;
 	}
 
 	@include large {
 		flex-grow: 0.4;
 	}
+
 	@include extra-large {
+		font-size: 24px;
+		font-weight: 500;
+		padding: 20px 50px;
 	}
 }

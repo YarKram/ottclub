@@ -12,6 +12,10 @@
 	@include desktop {
 		padding-top: 57px;
 	}
+
+	@include extra-large {
+		padding-top: 60px;
+	}
 }
 
 .faq__title {
@@ -41,6 +45,10 @@
 	@include large {
 		font-size: 40px;
 	}
+
+	@include extra-large {
+		font-size: 52px;
+	}
 }
 
 .faq__list {
@@ -60,6 +68,10 @@
 	@include large {
 		padding-bottom: 80px;
 		column-gap: 178px;
+	}
+
+	@include extra-large {
+		padding-bottom: 100px;
 	}
 }
 
@@ -108,6 +120,10 @@
 		gap: 50px;
 		font-weight: 500;
 	}
+
+	@include extra-large {
+		font-size: 24px;
+	}
 }
 
 .faq__content {
@@ -116,11 +132,19 @@
 	justify-content: space-between;
 	flex-direction: column;
 	gap: 10px;
+
+	@include extra-large {
+		gap: 20px;
+	}
 }
 
 .faq__text {
 	display: flex;
 	align-items: flex-start;
+
+	@include extra-large {
+		gap: 60px;
+	}
 }
 
 .faq-icon {
@@ -136,6 +160,11 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 150%; /* 24px */
+	opacity: 0.8;
+
+	@include extra-large {
+		font-size: 20px;
+	}
 }
 .faq__description.hidden {
 	display: none;

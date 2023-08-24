@@ -74,6 +74,11 @@
 		font-size: 40px;
 		margin-bottom: 16px;
 	}
+
+	@include extra-large {
+		font-size: 52px;
+		margin-bottom: 30px;
+	}
 }
 
 .devices__description {
@@ -107,6 +112,11 @@
 	@include large {
 		margin-bottom: 48px;
 		max-width: 530px;
+	}
+
+	@include extra-large {
+		font-size: 20px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -169,6 +179,11 @@
 		font-size: 20px;
 		padding: 18px 32px;
 	}
+
+	@include extra-large {
+		font-size: 26px;
+		padding: 24px 40px;
+	}
 }
 
 .devices__icon-list {
@@ -197,6 +212,11 @@
 		padding-bottom: 48px;
 		justify-content: space-between;
 	}
+
+	@include extra-large {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
 }
 
 .devices__icon-item {
@@ -204,6 +224,9 @@
 
 	@include desktop {
 		height: 30px;
+	}
+	@include extra-large {
+		height: 40px;
 	}
 }
 

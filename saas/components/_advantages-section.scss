@@ -15,6 +15,11 @@
 		padding-top: 48px;
 		padding-bottom: 56px;
 	}
+
+	@include extra-large {
+		padding-top: 60px;
+		padding-bottom: 80px;
+	}
 }
 
 .advantages__list {
@@ -50,12 +55,20 @@
 	@include desktop {
 		margin-bottom: 20px;
 		width: 64px;
-		height: 64px;
+		height: auto;
+		// height: 64px;
 	}
 	@include large {
 		margin-bottom: 24px;
 		width: 72px;
-		height: 72px;
+		height: auto;
+		// height: 72px;
+	}
+
+	@include extra-large {
+		margin-bottom: 32px;
+		width: 96px;
+		height: auto;
 	}
 }
 
@@ -78,6 +91,12 @@
 		font-size: 18px;
 		margin-bottom: 12px;
 	}
+
+	@include extra-large {
+		font-size: 24px;
+		line-height: 100%;
+		margin-bottom: 16px;
+	}
 }
 
 .advantages__description {
@@ -93,5 +112,9 @@
 		font-style: normal;
 		font-weight: 400;
 		line-height: 150%;
+	}
+
+	@include extra-large {
+		font-size: 20px;
 	}
 }

@@ -55,7 +55,7 @@
 								<a href="#" class="menu__login-link">Регистрация</a>
 							</li>
 							<li class="menu__action">
-								<a href="#" class="menu__login-link">Войти</a>
+								<a href="#" class="menu__login-link active">Войти</a>
 							</li>
 						</ul>
 					</div>
@@ -66,6 +66,14 @@
 					</h2>
 
 					<picture>
+						<source
+							media="(min-width: 1920px)"
+							srcset="
+								./src/images/header-images/header-right-picture1920.png    1x,
+								./src/images/header-images/header-right-picture1920@2x.png 2x,
+								./src/images/header-images/header-right-picture1920@3x.png 3x
+							"
+						/>
 						<source
 							media="(min-width: 1440px)"
 							srcset="
@@ -177,60 +185,66 @@
 			<section>
 				<div class="container pricing__container">
 					<div class="pricing__frame">
-						<img
-							src="./src/images/pricing-images/eye.png"
-							srcset="
-								./src/images/pricing-images/eye.png   1x,
-								./src/images/pricing-images/eye2x.png 2x,
-								./src/images/pricing-images/eye3x.png 3x
-							"
-							alt="eye"
-							class="pricing__image"
-						/>
-						<div class="pricing__positioning">
-							<div class="pricing__details">
-								<h3 class="pricing__price">
-									<span class="pricing__price--highlighted">1€</span>/месяц
-								</h3>
-								<p class="pricing__discount">
-									Покупая подписку более, чем на 6 месяцев
-								</p>
+						<div class="pricing__inner-frame">
+							<img
+								src="./src/images/pricing-images/eye.png"
+								srcset="
+									./src/images/pricing-images/eye.png   1x,
+									./src/images/pricing-images/eye2x.png 2x,
+									./src/images/pricing-images/eye3x.png 3x
+								"
+								alt="eye"
+								class="pricing__image"
+							/>
+							<div class="pricing__positioning">
+								<div class="pricing__details">
+									<h3 class="pricing__price">
+										<span class="pricing__price--highlighted">1€</span>/месяц
+									</h3>
+									<p class="pricing__discount">
+										Покупая подписку более, чем на 6 месяцев
+									</p>
+								</div>
+								<ul class="pricing__features">
+									<li
+										class="pricing__feature"
+										data-tablet="Более 270 каналов"
+										data-mobile="Более 250 каналов"
+									></li>
+									<li
+										class="pricing__feature"
+										data-mobile="127 FullHD каналов"
+										data-tablet="127 FullHD каналов"
+									></li>
+									<li
+										class="pricing__feature"
+										data-tablet="Режим Ultra TV Sport"
+										data-mobile="Режим Ultra TV Sport"
+									></li>
+									<li
+										class="pricing__feature"
+										data-tablet="Архив каналов"
+										data-mobile="7 дней архива каналов"
+									></li>
+									<li
+										class="pricing__feature"
+										data-tablet="5 устройств"
+										data-mobile="5 устройств = 1 подписка"
+									></li>
+								</ul>
 							</div>
-							<ul class="pricing__features">
-								<li
-									class="pricing__feature"
-									data-tablet="Более 270 каналов"
-									data-mobile="Более 250 каналов"
-								></li>
-								<li
-									class="pricing__feature"
-									data-mobile="127 FullHD каналов"
-									data-tablet="127 FullHD каналов"
-								></li>
-								<li
-									class="pricing__feature"
-									data-tablet="Режим Ultra TV Sport"
-									data-mobile="Режим Ultra TV Sport"
-								></li>
-								<li
-									class="pricing__feature"
-									data-tablet="Архив каналов"
-									data-mobile="7 дней архива каналов"
-								></li>
-								<li
-									class="pricing__feature"
-									data-tablet="5 устройств"
-									data-mobile="5 устройств = 1 подписка"
-								></li>
-							</ul>
-						</div>
 
-						<form action="" class="pricing__form">
-							<input placeholder="Email" type="email" class="pricing__input" />
-							<button type="submit" class="pricing__button">
-								Подключить тариф
-							</button>
-						</form>
+							<form action="" class="pricing__form">
+								<input
+									placeholder="Email"
+									type="email"
+									class="pricing__input"
+								/>
+								<button type="submit" class="pricing__button">
+									Подключить тариф
+								</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -477,7 +491,8 @@
 						<li class="faq__item">
 							<div class="faq__content">
 								<div class="faq__text">
-									Как подключить подписку OTTCLUB или продлить ее?
+									<p>Как подключить подписку OTTCLUB или продлить ее?</p>
+
 									<img
 										src="./src/images/faq-images/icon-down.svg"
 										alt="icon-down"

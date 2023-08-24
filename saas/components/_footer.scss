@@ -10,6 +10,11 @@
 	@include desktop {
 		padding-top: 40px;
 	}
+
+	@include extra-large {
+		padding-top: 90px;
+		padding-bottom: 20px;
+	}
 }
 
 .footer__section-flex {
@@ -41,13 +46,23 @@
 	}
 
 	@include desktop {
-		width: calc(50% - 110px / 2);
+		// width: calc(50% - 110px / 2);
+		max-width: 156px;
 		column-gap: 110px;
-		height: 160px;
+		height: 145px;
 	}
 
-	@include large {
-		height: 120px;
+	// @include large {
+	// 	height: 120px;
+	// }
+
+	@include extra-large {
+		max-width: 217px;
+		height: 190px;
+		width: auto;
+
+		column-gap: 140px;
+		row-gap: 10px;
 	}
 }
 
@@ -56,6 +71,16 @@
 
 	@include medium {
 		width: calc(50% - 4px);
+	}
+
+	@include desktop {
+		width: auto;
+		min-width: 156px;
+	}
+
+	@include extra-large {
+		width: auto;
+		max-width: 217px;
 	}
 }
 
@@ -68,12 +93,20 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 140%; /* 19.6px */
+
+	@include extra-large {
+		font-size: 18px;
+	}
 }
 
 .contact-info {
 	@include medium {
 		display: flex;
 		flex-direction: column;
+	}
+
+	@include extra-large {
+		font-size: 18px;
 	}
 }
 
@@ -88,6 +121,11 @@
 		flex-direction: column;
 		gap: 32px;
 	}
+
+	@include extra-large {
+		gap: 50px;
+		margin-bottom: 0;
+	}
 }
 
 .contact-section__title {
@@ -100,6 +138,10 @@
 	line-height: 140%; /* 22.4px */
 
 	margin-bottom: 18px;
+
+	@include extra-large {
+		font-size: 20px;
+	}
 }
 
 .contact-list {
@@ -109,6 +151,10 @@
 	margin-bottom: 16px;
 	@include medium {
 		margin-bottom: 0;
+	}
+
+	@include extra-large {
+		gap: 10px;
 	}
 }
 
@@ -122,6 +168,10 @@
 	line-height: 140%; /* 19.6px */
 
 	opacity: 0.8;
+
+	@include extra-large {
+		font-size: 18px;
+	}
 }
 
 .chat-support__title {
@@ -134,6 +184,11 @@
 	line-height: 140%; /* 19.6px */
 
 	margin-bottom: 8px;
+
+	@include extra-large {
+		font-size: 18px;
+		margin-bottom: 20px;
+	}
 }
 
 .chat-support__contact-list {
@@ -147,6 +202,10 @@
 
 	@include tablet {
 		justify-content: flex-start;
+	}
+
+	@include extra-large {
+		gap: 24px;
 	}
 }
 
@@ -162,6 +221,16 @@
 	@include tablet {
 		justify-content: flex-start;
 		margin-bottom: 22px;
+	}
+
+	@include extra-large {
+		gap: 20px;
+	}
+}
+
+.payment-options__item {
+	@include extra-large {
+		height: 40px;
 	}
 }
 
@@ -194,10 +263,16 @@
 		text-transform: uppercase;
 	}
 
-	&:nth-child(2) {
-		&::before {
-			content: "•";
-			margin-right: 8px;
+	@include tablet {
+		&:nth-child(2) {
+			&::before {
+				content: "•";
+				margin-right: 8px;
+			}
 		}
+	}
+
+	@include extra-large {
+		font-size: 15px;
 	}
 }

@@ -395,26 +395,26 @@ header {
 @media screen and (min-width: 768px) {
   .header-content__image {
     position: absolute;
-    left: 451px;
+    left: calc(100% - 316px);
     top: 77px;
   }
 }
 @media screen and (min-width: 990px) {
   .header-content__image {
     top: 58px;
-    left: 499px;
+    left: calc(100% - 491px);
   }
 }
 @media screen and (min-width: 1440px) {
   .header-content__image {
     top: 56px;
-    left: 693px;
+    left: calc(100% - 742px);
   }
 }
 @media screen and (min-width: 1920px) {
   .header-content__image {
     top: 76px;
-    left: 917px;
+    left: calc(100% - 1004px);
   }
 }
 
@@ -1193,10 +1193,21 @@ header {
   }
 }
 
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
 .channels__categories {
   display: flex;
   gap: 8px;
   margin-bottom: 24px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.channels__categories::-webkit-scrollbar {
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .channels__categories {
@@ -1212,6 +1223,7 @@ header {
 
 .channels__category {
   display: flex;
+  flex: 0 0 auto;
   padding: 8px 16px 9px 16px;
   justify-content: center;
   align-items: center;
@@ -1224,11 +1236,13 @@ header {
   font-style: normal;
   font-weight: 500;
   line-height: 140%; /* 22.4px */
+  cursor: grab;
 }
 .channels__category:active {
   font-size: 16px;
   box-shadow: 0px 0px 0px 2px #fc3232;
   background: #fc3232;
+  cursor: grabbing;
 }
 @media screen and (min-width: 768px) {
   .channels__category {
@@ -1785,6 +1799,7 @@ header {
   justify-content: space-between;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 @media screen and (min-width: 1920px) {
   .faq__content {
@@ -1795,6 +1810,8 @@ header {
 .faq__text {
   display: flex;
   align-items: flex-start;
+  width: 100%;
+  justify-content: space-between;
 }
 @media screen and (min-width: 1920px) {
   .faq__text {

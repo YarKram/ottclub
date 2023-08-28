@@ -171,23 +171,28 @@ header {
 	@include tablet {
 		position: absolute;
 		// right: 0;
-		left: 451px;
+		// left: 451px;
+		left: calc(100% - 316px);
+
 		top: 77px;
 		// margin-bottom: 0;
 	}
 	@include desktop {
 		top: 58px;
-		left: 499px;
+		left: calc(100% - 491px);
 	}
 	@include large {
 		top: 56px;
-		left: 693px;
+		// left: 693px;
+		left: calc(100% - 742px);
 	}
 	@include extra-large {
 		// width: 1006px;
 		// right: 0px;
 		top: 76px;
-		left: 917px;
+		left: calc(100% - 1004px);
+
+		// left: 917px;
 	}
 }
 

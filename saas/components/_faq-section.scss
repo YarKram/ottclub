@@ -79,6 +79,7 @@
 	display: flex;
 	align-items: flex-start;
 	justify-content: space-between;
+	// flex-wrap: wrap;
 
 	color: #fff;
 	font-family: Inter;
@@ -132,6 +133,7 @@
 	justify-content: space-between;
 	flex-direction: column;
 	gap: 10px;
+	width: 100%;
 
 	@include extra-large {
 		gap: 20px;
@@ -141,6 +143,8 @@
 .faq__text {
 	display: flex;
 	align-items: flex-start;
+	width: 100%;
+	justify-content: space-between;
 
 	@include extra-large {
 		gap: 60px;

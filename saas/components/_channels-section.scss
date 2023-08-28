@@ -128,11 +128,23 @@
 	}
 }
 
+.carousel-container {
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
 .channels__categories {
 	display: flex;
 	gap: 8px;
 	margin-bottom: 24px;
-	// overflow: hidden;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	white-space: nowrap;
+	overflow-x: auto;
+
 	@include tablet {
 		gap: 24px;
 	}
@@ -145,6 +157,7 @@
 
 .channels__category {
 	display: flex;
+	flex: 0 0 auto;
 	padding: 8px 16px 9px 16px;
 	justify-content: center;
 	align-items: center;
@@ -160,12 +173,14 @@
 	font-style: normal;
 	font-weight: 500;
 	line-height: 140%; /* 22.4px */
+	cursor: grab;
 
 	&:active {
 		font-size: 16px;
 
 		box-shadow: 0px 0px 0px 2px #fc3232;
 		background: #fc3232;
+		cursor: grabbing;
 	}
 
 	@include tablet {

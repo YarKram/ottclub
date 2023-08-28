@@ -1,4 +1,5 @@
 // _variables.scss
+@import "./mixins";
 
 $breakpoint-small: 320px;
 $breakpoint-medium: 375px;
@@ -13,3 +14,111 @@ $padding-tablet: 40px;
 $padding-desktop: 48px;
 $padding-large: 172px;
 $padding-extra-large: 229px;
+
+// Common Variables
+$font-family: Inter;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$line-height-regular: 140%;
+$line-height-medium: 120%;
+$line-height-large: 110%;
+
+$color-white: #fff;
+$color-red: #fc3232;
+$color-gray: #c6c6c8;
+
+$border-radius: 5px;
+$border-width: 2px;
+$border-color: $color-white;
+
+$gap-small: 10px;
+$gap-medium: 24px;
+$gap-large: 32px;
+
+// // Common CSS Rules headers
+// .common-flex {
+// 	display: flex;
+// 	align-items: center;
+// }
+
+// .common-padding {
+// 	padding-top: 16px;
+// 	padding-bottom: 8px;
+
+// 	@include medium {
+// 		padding-top: 44px;
+// 	}
+
+// 	@include tablet {
+// 		padding-top: 23px;
+// 		padding-bottom: 23px;
+// 	}
+// }
+
+// .common-text {
+// 	color: $color-white;
+// 	font-family: $font-family;
+// 	font-weight: $font-weight-regular;
+// 	line-height: $line-height-regular;
+// 	text-align: center;
+// 	opacity: 0.8;
+
+// 	@include medium {
+// 		font-size: 16px;
+// 		margin-bottom: 32px;
+// 	}
+
+// 	@include tablet {
+// 		font-size: 17px;
+// 		margin-bottom: 34px;
+// 		text-align: left;
+// 	}
+
+// 	@include desktop {
+// 		font-size: 18px;
+// 		margin-bottom: 48px;
+// 	}
+
+// 	@include large {
+// 		font-size: 20px;
+// 		margin-bottom: 56px;
+// 	}
+
+// 	@include extra-large {
+// 		font-size: 26px;
+// 		margin-bottom: 70px;
+// 	}
+// }
+
+// .common-link {
+// 	display: inline-flex;
+// 	padding: 14px;
+// 	justify-content: center;
+// 	align-items: center;
+// 	gap: 10px;
+
+// 	border-radius: $border-radius;
+// 	background: $color-red;
+
+// 	color: $color-white;
+// 	font-family: $font-family;
+// 	font-weight: $font-weight-semibold;
+// 	line-height: $line-height-regular;
+// 	text-decoration: none;
+
+// 	@include medium {
+// 		font-size: 17px;
+// 		padding: 16px 24px;
+// 	}
+
+// 	@include desktop {
+// 		font-size: 18px;
+// 		padding: 16px 28px;
+// 	}
+
+// 	@include extra-large {
+// 		font-size: 26px;
+// 		padding: 24px 40px;
+// 	}
+// }

@@ -1,24 +1,16 @@
+header {
+	position: relative;
+}
+
 .menu {
-	display: flex;
+	@include common-flex;
 	justify-content: space-between;
-	align-items: center;
-	padding-top: 16px;
-	padding-bottom: 8px;
-
-	@include medium {
-		padding-top: 44px;
-	}
-
-	@include tablet {
-		padding-top: 23px;
-		padding-bottom: 23px;
-	}
+	@include common-padding;
 }
 
 .menu__wide-screen {
-	display: flex;
+	@include common-flex;
 	gap: 48px;
-	align-items: center;
 }
 
 .menu__social {
@@ -31,7 +23,7 @@
 }
 
 .menu__actions--right {
-	display: flex;
+	@include common-flex;
 	gap: 24px;
 }
 
@@ -42,8 +34,8 @@
 	align-items: center;
 	gap: 10px;
 
-	border-radius: 5px;
-	border: 2px solid #fff;
+	border-radius: $border-radius;
+	border: $border-width solid $border-color;
 }
 
 .menu__action-registration {
@@ -65,40 +57,31 @@
 }
 
 .menu__login-link {
-	color: #fff;
+	color: $color-white;
 	text-align: center;
-
-	font-family: Inter;
+	font-family: $font-family;
 	font-size: 16px;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 140%;
+	font-weight: $font-weight-medium;
+	line-height: $line-height-regular;
 
 	@include extra-large {
 		text-align: right;
 		font-size: 20px;
-		font-weight: 600;
+		font-weight: $font-weight-semibold;
 		opacity: 0.8;
 	}
 	&.active {
-		font-weight: 500;
+		font-weight: $font-weight-medium;
 	}
 }
 
 .header-content {
-	display: flex;
+	@include common-flex;
 	flex-direction: column;
 	align-items: center;
+	@include common-padding;
 
-	padding-top: 16px;
-	padding-bottom: 16px;
-	@include medium {
-		padding-top: 24px;
-		padding-bottom: 24px;
-	}
 	@include tablet {
-		// position: relative;
-
 		align-items: flex-start;
 		width: 65%;
 	}
@@ -118,14 +101,12 @@
 }
 
 .header-content__title {
-	color: #fff;
+	color: $color-white;
 	text-align: center;
-	font-family: Inter;
+	font-family: $font-family;
 	font-size: 24px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 120%; /* 28.8px */
-
+	font-weight: $font-weight-semibold;
+	line-height: $line-height-medium;
 	margin-bottom: 7px;
 
 	@include medium {
@@ -155,108 +136,41 @@
 }
 
 .header-content__image {
-	display: flex;
-	// flex-shrink: 0;
-	// display: contents;
-
+	@include common-flex;
 	margin-bottom: 16px;
 
 	@include medium {
 		margin-bottom: 13px;
 	}
+
 	@include tablet {
 		position: absolute;
-		// right: 0;
-		left: 451px;
+		left: 100%;
+		left: calc(100% - 317px);
 		top: 77px;
-		// margin-bottom: 0;
 	}
+
 	@include desktop {
 		top: 58px;
-		left: 499px;
+		left: calc(100% - 489px);
 	}
+
 	@include large {
 		top: 56px;
-		left: 693px;
+		right: 0;
+		left: calc(100% - 734px);
 	}
+
 	@include extra-large {
-		// width: 1006px;
-		// right: 0px;
 		top: 76px;
-		left: 917px;
+		left: calc(100% - 993px);
 	}
 }
 
 .header-content__text {
-	color: #fff;
-	text-align: center;
-	font-family: Inter;
-	font-size: 15px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 140%; /* 21px */
-
-	margin-bottom: 24px;
-	opacity: 0.8;
-	// }
-
-	@include medium {
-		font-size: 16px;
-		margin-bottom: 32px;
-	}
-
-	@include tablet {
-		font-size: 17px;
-		margin-bottom: 34px;
-		text-align: left;
-	}
-
-	@include desktop {
-		font-size: 18px;
-		margin-bottom: 48px;
-	}
-
-	@include large {
-		font-size: 20px;
-		margin-bottom: 56px;
-	}
-
-	@include extra-large {
-		font-size: 26px;
-		margin-bottom: 70px;
-	}
+	@include common-text;
 }
 
 .header-content__link {
-	display: inline-flex;
-	padding: 14px;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
-
-	border-radius: 5px;
-	background: #fc3232;
-
-	color: #fff;
-	font-family: Inter;
-	font-size: 15px;
-	font-style: normal;
-	font-weight: 600;
-	line-height: 140%; /* 21px */
-
-	@include medium {
-		font-size: 17px;
-		padding: 16px 24px;
-	}
-
-	@include desktop {
-		font-size: 18px;
-		padding: 16px 28px;
-	}
-
-	@include extra-large {
-		font-size: 26px;
-		padding: 24px 40px;
-		// margin-bottom: 194px;
-	}
+	@include common-link;
 }

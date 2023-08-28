@@ -1041,7 +1041,7 @@ header {
 }
 
 .channels__container {
-  background-image: url("/web@3x.png");
+  background-image: url("../src/images/channels-images/web.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center left;
